@@ -36,7 +36,7 @@ const Navbar = () => {
         </div>
 
         {/*Social Media*/}
-        <div className="hidden md:flex gap-4 w-1/3">
+        <div className="hidden md:flex gap-4 bg-white rounded-xl p-2">
           <Link href="https://www.github.com/rmondev" target="_blank">
             <Image
             src='/github.png'
