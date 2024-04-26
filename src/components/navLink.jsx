@@ -13,7 +13,7 @@ const NavLink = ({link}) => {
 
     const pathName= usePathname();
 
-    console.log(pathName);
+
 
   return (
 

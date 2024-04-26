@@ -1,7 +1,7 @@
 {
   "extends": [
     "eslint:recommended",
-    "next/babel",
+    // "next/babel",
     "next/core-web-vitals"
   ],
   "rules": {
