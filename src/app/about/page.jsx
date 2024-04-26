@@ -9,7 +9,8 @@ const AboutPage = () => {
   const { scrollYProgress } = useScroll({ container: containerRef });
 
   const skillRef = useRef();
-  const isSkillRefInView = useInView(skillRef, {once: true});
+  // const isSkillRefInView = useInView(skillRef, {once: true});
+  const isSkillRefInView = useInView(skillRef, {margin:"-100px"});
 
 
   return (
@@ -87,7 +88,12 @@ const AboutPage = () => {
               SKILLS
           </motion.h1>
           {/*SKILLS LIST*/}
-            <div className="flex gap-4 flex-wrap">
+            <motion.div 
+            initial={{x:"-1000px"}} 
+            animate={isSkillRefInView ? {x:0} : {}} 
+            transition={{delay:0.2}} 
+            ref={skillRef}
+            className="flex gap-4 flex-wrap">
               <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">JavaScript</div>
               <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">TypeScript</div>
               <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">Next.js</div>
@@ -100,7 +106,7 @@ const AboutPage = () => {
               <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">Redux</div>
               <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">Framer Motion</div>
               
-            </div>
+            </motion.div>
 
            
             {/*SKILL SCROLL SVG*/}
