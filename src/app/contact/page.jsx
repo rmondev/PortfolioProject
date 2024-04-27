@@ -1,19 +1,60 @@
 "use client"
 import { motion } from 'framer-motion';
 import { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
 
 const ContactPage = () => {
 
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
 
+  const [user_email, setUserEmail] = useState('');
+  const [user_message, setUserMessage] = useState('');
+  const [user_name, setUsername] = useState('');
+
   const text = "Contact Me "
   const form = useRef();
+
+  const templateParams = {
+    to_name: 'rmon.dev',
+    from_name: user_name,
+    from_email: user_email,
+    message: user_message
+  };
 
   const sendEmail = (e) =>{
     e.preventDefault();
     setError(false);
     setSuccess(false);
+
+    emailjs.send(
+      process.env.NEXT_PUBLIC_SERVICE_ID,
+      process.env.NEXT_PUBLIC_TEMPLATE_ID, 
+      templateParams,
+      process.env.NEXT_PUBLIC_PUBLIC_KEY)
+      .then((response) => {
+        console.log('SUCCESS!', response.status, response.text);
+
+        setUserEmail('');
+        setUsername('');
+        setUserMessage('');
+
+        setSuccess(true);
+        setTimeout(() => {
+          setSuccess(false);
+      }, 5000);
+
+
+        
+      })
+      .catch((error) => {
+        console.log('FAILED...', error);
+        setError(true);
+        setTimeout(() => {
+          setError(false);
+      }, 5000);
+      });
+    
     
   }
 
@@ -55,19 +96,39 @@ const ContactPage = () => {
           className="h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-24"
           >
             <span>Dear rmon.dev,</span>
+            <span>My name is:</span>
+            <input
+              type="name"
+              value={user_name}
+              onChange={(e) => setUsername(e.target.value)}
+              className='bg-transparent border-b-2 border-b-black outline-none'
+              name="user_name"
+              />
+
+            <span>Message:</span>
             <textarea 
               rows={6}
               className='bg-transparent border-b-2 border-b-black outline-none resize-none '
-              name="user_message"/>
+              name="user_message"
+              value={user_message}
+              onChange={(e) => setUserMessage(e.target.value)}
+              />
             
             <span>My email address is:</span>
             <input
               type="email"
               className='bg-transparent border-b-2 border-b-black outline-none'
-              name="user_email"/>
+              name="user_email"
+              value={user_email}
+              onChange={(e) => setUserEmail(e.target.value)}
+              />
+
+            
 
             <span>Regards</span>
-            <button className="bg-purple-200 rounded-xl font-semibold text-gray-600 p-4">
+            <button 
+            className="bg-purple-200 rounded-xl font-semibold text-gray-600 p-4"
+            type='submit'>
                 Send
               </button>
 
