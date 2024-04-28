@@ -93,7 +93,7 @@ const ContactPage = () => {
           <form
           onSubmit={sendEmail}
           ref={form}
-          className="h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-24"
+          className="h-5/6 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-5 justify-center p-20 mb-8"
           >
             <span>Dear rmon.dev,</span>
             <span>My name is:</span>
@@ -106,9 +106,10 @@ const ContactPage = () => {
               />
 
             <span>Message:</span>
+            
             <textarea 
-              rows={6}
-              className='bg-transparent border-b-2 border-b-black outline-none resize-none '
+              rows={4}
+              className='bg-transparent border-2 border-gray-600'
               name="user_message"
               value={user_message}
               onChange={(e) => setUserMessage(e.target.value)}
