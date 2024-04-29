@@ -18,7 +18,7 @@ const Homepage = () => {
       <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
 
         {/* IMAGE CONTAINER */}      
-        <div className="h-1/2 lg:h-full lg:w-1/2 relative">
+        <div className="h-3/4 lg:h-full lg:w-1/2 relative z-10">
           <Image
           src='/explosion_of_color.png'
           alt=''
@@ -28,7 +28,7 @@ const Homepage = () => {
         </div>
 
         {/* TEXT CONTAINER */}
-        <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center">
+        <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center relative z-20 bg-transparent">
           {/* TITLE */}
           <h1 className="text-4xl font-bold md:text-6xl">Crafting Digital Experiences, Designing Tomorrow</h1>
           
@@ -39,6 +39,7 @@ const Homepage = () => {
             a diverse collection of projects that reflect my commitment to excellence.
             </p>
           
+          {/* BUTTONS */}
           <div className="flex w-full gap-4">
             <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white">View My Work</button>
             <button className="p-4 rounded-lg ring-1 ring-black">Contact Me</button>
