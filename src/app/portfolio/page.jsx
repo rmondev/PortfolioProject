@@ -29,7 +29,7 @@ const PortfolioPage = () => {
       color: "from-red-300 to-blue-300",
       title: "iOS Tax Filing Management App",
       desc: "This is an app I created to Tax Filing Management App to handle a customer database for a tax filing agency. This application implements iOS CoreData to enable database persistence.",
-      img: ["/screenshots/iOSTaxFilingApp/MainScreen.png","/screenshots/iOSTaxFilingApp/BeforeScreen.png","/screenshots/iOSTaxFilingApp/AfterScreen.png", "/screenshots/iOSTaxFilingApp/StatusChanged.png"],
+      img: ["/screenshots/iOSTaxFilingApp/MainScreen.png","/screenshots/iOSTaxFilingApp/BeforeScreen.png","/screenshots/iOSTaxFilingApp/AfterScreen.png",],
       link: "https://github.com/rmondev/iOS-Tax-Filing-Management-App",
     },
     {
@@ -80,7 +80,7 @@ const PortfolioPage = () => {
                   <div className="flex flex-col gap-8 text-white">
                     <h1 className="text-xl font-bold md:text-4xl lg:text-6xl xl:text-8xl">{item.title}</h1>
                     <Link href={item.link}>
-                      <div className="flex items-center justify-center gap-0.5">
+                      <div className="flex items-center justify-center gap-2">
                         {item.img.map((imgPath, index) => (
                           <div key={index} className="w-24 h-52 sm:w-[98px] sm:h-[213px]       md:w-[98px] md:h-[213px] lg:w-[196px] lg:h-[426px] xl:w-[222px] xl:h-[510px] border-2 border-black md:rounded-lg lg:rounded-2xl xl:rounded-2xl rounded-md relative overflow-hidden">
                           <Image src={imgPath} alt="" fill />
@@ -92,7 +92,7 @@ const PortfolioPage = () => {
                     </Link>
                     <p className='w-80 lg:w-[500px] lg:text-lg xl:w-[600px]'>{item.desc}</p>
                     <Link href={item.link} className='flex justify-end'>
-                      <button className='p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded-xl'>See Demo</button>
+                      <button className='m-4 p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold rounded-xl'>See Demo</button>
                     </Link>
                   </div>
                 </div>
