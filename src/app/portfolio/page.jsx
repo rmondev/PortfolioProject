@@ -71,7 +71,7 @@ const PortfolioPage = () => {
                     <Link href={item.link}>
                       <div className="flex items-center justify-center gap-4">
                         {item.img.map((imgPath, index) => (
-                          <div key={index} className="w-24 h-52 sm:w-[39px] sm:h-[91px] md:w-[98px] md:h-[213px] lg:w-[196px] lg:h-[426px] xl:w-[222px] xl:h-[510px] border-2 border-black rounded-2xl relative overflow-hidden">
+                          <div key={index} className="w-24 h-52 sm:w-[98px] sm:h-[213px]       md:w-[98px] md:h-[213px] lg:w-[196px] lg:h-[426px] xl:w-[222px] xl:h-[510px] border-2 border-black md:rounded-lg lg:rounded-2xl xl:rounded-2xl rounded-md relative overflow-hidden">
                           <Image src={imgPath} alt="" fill />
                         </div>
 
