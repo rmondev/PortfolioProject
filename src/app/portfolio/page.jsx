@@ -62,33 +62,30 @@ const PortfolioPage = () => {
             <motion.div style={{ x }}className="flex">
               <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-purple-300 to-red-300"></div>
               {items.map((item) => (
-  <div 
-    className={`h-screen w-screen flex items-center justify-center bg-gradient-to-r ${item.color}`}
-    key={item.id}
-  >
-    <div className="flex flex-col gap-8 text-white">
-      <h1 className="text-xl font-bold md:text-4xl lg:text-6xl xl:text-8xl">{item.title}</h1>
-      <Link href={item.link}>
-        <div className="flex items-center justify-center gap-4">
-          {item.img.map((imgPath, index) => (
-        
-            <Image 
-            className="border-4 border-black rounded-2xl"
-            src={imgPath} 
-            alt="" 
-            width={196} 
-            height={426} 
-            key={index} />
-          ))}
-        </div>
-      </Link>
-      <p className='w-80 lg:w-[500px] lg:text-lg xl:w-[600px]'>{item.desc}</p>
-      <Link href={item.link} className='flex justify-end'>
-        <button className='p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded-xl'>See Demo</button>
-      </Link>
-    </div>
-  </div>
-))}
+                <div 
+                  className={`h-screen w-screen flex items-center justify-center bg-gradient-to-r ${item.color}`}
+                  key={item.id}
+                >
+                  <div className="flex flex-col gap-8 text-white">
+                    <h1 className="text-xl font-bold md:text-4xl lg:text-6xl xl:text-8xl">{item.title}</h1>
+                    <Link href={item.link}>
+                      <div className="flex items-center justify-center gap-4">
+                        {item.img.map((imgPath, index) => (
+                          <div key={index} className="w-32 h-auto sm:w-[49px] sm:h-[106px] md:w-[98px] md:h-[213px] lg:w-[196px] lg:h-[426px] xl:w-[222px] xl:h-[510px] border-2 border-black rounded-2xl relative overflow-hidden">
+                          <Image src={imgPath} alt="" fill />
+                        </div>
+
+
+                        ))}
+                      </div>
+                    </Link>
+                    <p className='w-80 lg:w-[500px] lg:text-lg xl:w-[600px]'>{item.desc}</p>
+                    <Link href={item.link} className='flex justify-end'>
+                      <button className='p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded-xl'>See Demo</button>
+                    </Link>
+                  </div>
+                </div>
+              ))}
           </motion.div>
         </div>
       </div>
