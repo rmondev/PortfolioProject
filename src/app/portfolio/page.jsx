@@ -26,6 +26,14 @@ const PortfolioPage = () => {
     },
     {
       id: 3,
+      color: "from-red-300 to-blue-300",
+      title: "iOS Tax Filing Management App",
+      desc: "This is an app I created to Tax Filing Management App to handle a customer database for a tax filing agency. This application implements iOS CoreData to enable database persistence.",
+      img: ["/screenshots/iOSTaxFilingApp/MainScreen.png","/screenshots/iOSTaxFilingApp/BeforeScreen.png","/screenshots/iOSTaxFilingApp/AfterScreen.png", "/screenshots/iOSTaxFilingApp/StatusChanged.png"],
+      link: "https://github.com/rmondev/iOS-Tax-Filing-Management-App",
+    },
+    {
+      id: 4,
       color: "from-violet-300 to-purple-300",
       title: "Android To-Do List App",
       desc: "This application showcases the implementation of various android UI Elements and Room database functionality.",
@@ -33,13 +41,16 @@ const PortfolioPage = () => {
       link: "https://github.com/rmondev/Android-ToDo-App",
     },
     {
-      id: 4,
+      id: 5,
       color: "from-purple-300 to-red-300",
       title: "Android Multi App",
       desc: "A multi-feature Android application that showcases various functionalities such as Camera, Phone and Messaging intents. This project has been extracted from a larger Android development repository for focused development, easier management, and portfolio showcasing.",
       img: ["/screenshots/androidMultiApp/splash_screen.png","/screenshots/androidMultiApp/app_selection.png","/screenshots/androidMultiApp/calling_permission.png"],
       link: "https://github.com/rmondev/Android-Multi-App",
     },
+   
+
+
   ];
 
   const ref = useRef();
@@ -54,7 +65,7 @@ const PortfolioPage = () => {
       transition={{duration: 1}}
       >
       <div className="h-[600vh] relative" ref={ref}>
-        <div className="w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-8xl text-center sm:text-6xl">
+        <div className="w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-8xl sm:text-4xl md:text-4xl text-center">
           My Works
         </div>
           <div className="sticky top-0 flex h-screen gap-4 items-center overflow-hidden">
@@ -69,7 +80,7 @@ const PortfolioPage = () => {
                   <div className="flex flex-col gap-8 text-white">
                     <h1 className="text-xl font-bold md:text-4xl lg:text-6xl xl:text-8xl">{item.title}</h1>
                     <Link href={item.link}>
-                      <div className="flex items-center justify-center gap-4">
+                      <div className="flex items-center justify-center gap-2">
                         {item.img.map((imgPath, index) => (
                           <div key={index} className="w-24 h-52 sm:w-[98px] sm:h-[213px]       md:w-[98px] md:h-[213px] lg:w-[196px] lg:h-[426px] xl:w-[222px] xl:h-[510px] border-2 border-black md:rounded-lg lg:rounded-2xl xl:rounded-2xl rounded-md relative overflow-hidden">
                           <Image src={imgPath} alt="" fill />
