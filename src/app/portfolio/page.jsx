@@ -54,7 +54,7 @@ const PortfolioPage = () => {
       transition={{duration: 1}}
       >
       <div className="h-[600vh] relative" ref={ref}>
-        <div className="w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-8xl text-center">
+        <div className="w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-8xl text-center sm:text-6xl">
           My Works
         </div>
           <div className="sticky top-0 flex h-screen gap-4 items-center overflow-hidden">
@@ -71,7 +71,7 @@ const PortfolioPage = () => {
                     <Link href={item.link}>
                       <div className="flex items-center justify-center gap-4">
                         {item.img.map((imgPath, index) => (
-                          <div key={index} className="w-32 h-auto sm:w-[49px] sm:h-[106px] md:w-[98px] md:h-[213px] lg:w-[196px] lg:h-[426px] xl:w-[222px] xl:h-[510px] border-2 border-black rounded-2xl relative overflow-hidden">
+                          <div key={index} className="w-24 h-52 sm:w-[39px] sm:h-[91px] md:w-[98px] md:h-[213px] lg:w-[196px] lg:h-[426px] xl:w-[222px] xl:h-[510px] border-2 border-black rounded-2xl relative overflow-hidden">
                           <Image src={imgPath} alt="" fill />
                         </div>
 
