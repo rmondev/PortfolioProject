@@ -21,7 +21,7 @@ const Homepage = () => {
         {/* IMAGE CONTAINER */}      
         <div className="h-3/4 lg:h-full lg:w-1/2 relative z-0">
           <Image
-          src='/hero.png'
+          src='/explosion_of_color.png'
           alt=''
           fill
           className='object-contain'
@@ -31,17 +31,18 @@ const Homepage = () => {
         {/* TEXT CONTAINER */}
         <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center relative z-20">
           {/* TITLE */}
-          <h1 className="text-4xl text-black font-semibold md:text-6xl">Crafting Digital Experiences, Designing Tomorrow</h1>
+          <h1 className="text-4xl text-black font-semibold md:text-6xl">Crafting Tomorrow’s Technology, Today.</h1>
           
           {/*DESCRIPTION */}
           <p className="md:text-xl">
-            Welcome to my digital canvas,  where innovation and creativity converge. 
-            With a keen eye for aesthetics and a mastery of code, my portfolio showcases 
-            a diverse collection of projects that reflect my commitment to excellence.
+          Welcome to my digital canvas, where innovation meets artistry. 
+          Here, meticulous coding and a refined aesthetic sense unite, 
+          presenting a portfolio rich with diverse projects that exemplify 
+          my dedication to excellence.
             </p>
           
           {/* BUTTONS */}
-          <div className="flex w-full gap-4">
+          <div className="flex w-full gap-4 items-center justify-center">
             <Link href="/portfolio">
               <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white">View My Work</button>
             </Link>
