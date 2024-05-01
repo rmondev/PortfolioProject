@@ -65,7 +65,7 @@ const PortfolioPage = () => {
       transition={{duration: 1}}
       >
       <div className="h-[600vh] relative" ref={ref}>
-        <div className="w-screen h-[calc(100vh-6rem)] flex items-center justify-center sm:text-4xl md:text-4xl lg:text-8xl text-center">
+        <div className="w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-4xl sm:text-2xl md:text-4xl lg:text-8xl text-center">
           My Works
         </div>
           <div className="sticky top-0 flex h-screen gap-4 items-center overflow-hidden">
@@ -82,7 +82,7 @@ const PortfolioPage = () => {
                     <Link href={item.link}>
                       <div className="flex items-center justify-center gap-2">
                         {item.img.map((imgPath, index) => (
-                          <div key={index} className="w-16 h-40 sm:w-[98px] sm:h-[213px]       md:w-[98px] md:h-[213px] lg:w-[196px] lg:h-[426px] xl:w-[222px] xl:h-[510px] border-2 border-black md:rounded-lg lg:rounded-2xl xl:rounded-2xl rounded-md relative overflow-hidden">
+                          <div key={index} className="w-18 h-40 sm:w-[98px] sm:h-[213px]       md:w-[98px] md:h-[213px] lg:w-[196px] lg:h-[426px] xl:w-[222px] xl:h-[510px] border-2 border-black md:rounded-lg lg:rounded-2xl xl:rounded-2xl rounded-md relative overflow-hidden">
                           <Image src={imgPath} alt="" fill />
                         </div>
 
