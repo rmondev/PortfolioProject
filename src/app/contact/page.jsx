@@ -67,29 +67,42 @@ const ContactPage = () => {
       >
       <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
         {/* TEXT CONTAINER */}
-        <div className="h-1/2 lg:h-full lg:w-1/2 flex items-center justify-center text-6xl overflow-hidden">
-          <div>
-              {text.split("").map((char, index) => (
-                <motion.span
-                  key={index}
-                initial={{ opacity: 1 }}
-                animate={{ opacity: 0 }}
-                transition={{
-                  duration: 3,
-                  repeat: Infinity,
-                  delay: index * 0.1,
-                }}
-                >
-                  { char }
-                </motion.span>
+        <div className="h-1/2 lg:h-full lg:w-1/2 flex items-center justify-center text-6xl">
+          <div className="items-center justify-center">
+            <div>
+                {text.split("").map((char, index) => (
+                  <motion.span
+                    key={index}
+                  initial={{ opacity: 1 }}
+                  animate={{ opacity: 0 }}
+                  transition={{
+                    duration: 3,
+                    repeat: Infinity,
+                    delay: index * 0.1,
+                  }}
+                  >
+                    { char }
+                  </motion.span>
 
-              ))} 
+                ))}
+                
+              </div>
+              <div className='flex flex-col items-center justify-center'>😃</div>
             </div>
+            
+          </div>
+
+          <div className="bg-red-500 h-5/6 lg:h-full lg:w-1/2 rounded-xl text-xl flex flex-col justify-center p-20 mb-8">
+            <form
+            onSubmit={sendEmail}
+            >
+
+            </form>
           </div>
 
           {/* CONTACT FORM CONTAINER*/}
 
-          <form
+          {/* <form
           onSubmit={sendEmail}
           ref={form}
           className="h-5/6 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-5 justify-center p-20 mb-8"
@@ -142,7 +155,7 @@ const ContactPage = () => {
                 Something went wrong!
               </span>
             )}
-          </form>
+          </form> */}
 
 
           
