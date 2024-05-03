@@ -18,7 +18,7 @@ const NavLink = ({link}) => {
   return (
 
 
-    <Link className={`rounded-lg p-2 ${pathName === link.url && 'bg-black text-white'}`} href={link.url}>
+    <Link className={`rounded-lg p-2 ${pathName === link.url && 'bg-black text-white'} z-60`} href={link.url}>
         {link.title}
     </Link>
   )

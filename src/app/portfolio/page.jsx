@@ -81,6 +81,8 @@ const PortfolioPage = () => {
   const {scrollYProgress} = useScroll({target: ref});
   const x = useTransform(scrollYProgress, [0, 1], ["0%", "-80%"]);
 
+  const animationText = " <- Fullstack <- React <- Mobile <- Developer"
+
   return (
     <motion.div 
       className='h-full' 
@@ -194,8 +196,8 @@ const PortfolioPage = () => {
               />
             </defs>
             <text fill="#000">
-              <textPath xlinkHref="#circlePath" className="text-xl">
-                - Full-stack - React - Mobile - Developer
+              <textPath xlinkHref="#circlePath" className="text-lg">
+                {animationText}
               </textPath>
             </text>
           </motion.svg>
