@@ -5,6 +5,7 @@ import {useState} from 'react';
 import Image from 'next/image';
 import NavLink from '@/components/navLink';
 import {motion} from 'framer-motion';
+import Social from '@/components/social';
 
   const links = [
     {url: "/", title: "Home"},
@@ -151,12 +152,23 @@ const Navbar = () => {
 
            {/* Menu List */}
            {open && (
+
             <motion.div 
               variants={listVariants} 
               initial="closed" 
               animate="opened"
               className="absolute top-0 left-0 w-screen h-screen bg-black text-white flex flex-col items-center justify-center gap-8 text-4xl z-40">
            
+             
+
+              <motion.div
+              variants={listItemVariants}
+              className="select-none"
+              >
+                 <Social/>
+              </motion.div>
+
+
               {links.map(link => (
               
               <motion.div 
@@ -168,11 +180,23 @@ const Navbar = () => {
                   </Link>
                   </motion.div>
               ))}
-             
+
+              
+
+            
 
             </motion.div>
+
+            
+            
             )}
+          
+              
+             
+            
+           
         </div>
+        
       </div>
   )
 }

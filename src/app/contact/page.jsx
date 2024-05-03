@@ -2,6 +2,7 @@
 import { motion } from 'framer-motion';
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import Social from '@/components/social';
 
 const ContactPage = () => {
 
@@ -87,7 +88,7 @@ const ContactPage = () => {
                 ))}
                 
               </div>
-              <div className='flex flex-col items-center justify-center pb-2'>😃</div>
+              <div className='flex flex-col items-center justify-center p-2'><Social/></div>
             </div>
             
           </div>
