@@ -100,6 +100,7 @@ const ContactPage = () => {
                 <span className='pb-2'>Dear rmon.dev,</span>
                 <span className='pb-2'>My name is:</span>
                 <textarea
+                  rows={1}
                   type="name"
                   value={user_name}
                   onChange={(e) => setUsername(e.target.value)}
@@ -121,6 +122,7 @@ const ContactPage = () => {
                 <div className="flex flex-col">
                   <span className='pb-2'>My email address is:</span>
                     <textarea
+                      rows={1}
                       type="email"
                       className='bg-transparent border-b-2 border-b-black outline-none'
                       name="user_email"
