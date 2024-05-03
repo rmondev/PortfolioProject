@@ -10,7 +10,7 @@ const PortfolioPage = () => {
   const items = [
     {
       id: 1,
-      color: "from-violet-300 to-red-300",
+      color: "from-green-300 to-red-300",
       title: "Chronicle: Your Ultimate Travel Companion ",
       desc: "Chronicle is a mobile web app for effortless travel documentation and sharing. Capture your journeys with text, photos, and videos, and relive your adventures anytime, anywhere.",
       img: ["/screenshots/webChronicleApp/main_screen.png", "/screenshots/webChronicleApp/home_screen.png", "/screenshots/webChronicleApp/forum.png"],
@@ -26,7 +26,7 @@ const PortfolioPage = () => {
     },
     {
       id: 3,
-      color: "from-blue-300 to-violet-300",
+      color: "from-blue-300 to-yellow-300",
       title: "iOS Movie Database App",
       desc: "This is a movie database application I created to practice and showcases search bar functionality, swipe functionality and alert controllers.",
       img: ["/screenshots/iOSMovieDBApp/WelcomeScreen.png","/screenshots/iOSMovieDBApp/FilmListing.png","/screenshots/iOSMovieDBApp/AddFilm.png"],
@@ -34,7 +34,7 @@ const PortfolioPage = () => {
     },
     {
       id: 4,
-      color: "from-violet-300 to-red-300",
+      color: "from-yellow-300 to-purple-300",
       title: "iOS Tax Filing Management App",
       desc: "This is an app I created to Tax Filing Management App to handle a customer database for a tax filing agency. This application implements iOS CoreData to enable database persistence.",
       img: ["/screenshots/iOSTaxFilingApp/MainScreen.png","/screenshots/iOSTaxFilingApp/BeforeScreen.png","/screenshots/iOSTaxFilingApp/AfterScreen.png",],
@@ -42,7 +42,7 @@ const PortfolioPage = () => {
     },
     {
       id: 5,
-      color: "from-red-300 to-blue-300",
+      color: "from-purple-300 to-blue-300",
       title: "Android To-Do List App",
       desc: "This application showcases the implementation of various android UI Elements and Room database functionality.",
       img: ["/screenshots/androidToDoApp/SplashScreen.png","/screenshots/androidToDoApp/AddNewToDoItem.png","/screenshots/androidToDoApp/NewToDoListItemAdded.png"],
@@ -50,7 +50,7 @@ const PortfolioPage = () => {
     },
     {
       id: 6,
-      color: "from-blue-300 to-violet-300",
+      color: "from-blue-300 to-blue-500",
       title: "Android Multi App",
       desc: "A multi-feature Android application that showcases various functionalities such as Camera, Phone and Messaging intents.",
       img: ["/screenshots/androidMultiApp/splash_screen.png","/screenshots/androidMultiApp/app_selection.png","/screenshots/androidMultiApp/calling_permission.png"],
@@ -58,7 +58,7 @@ const PortfolioPage = () => {
     },
     {
       id: 7,
-      color: "from-violet-300 to-red-300",
+      color: "from-blue-500 to-sky-300",
       title: "Met Gallery Web App",
       desc: "The Met Artwork App is an interactive web application that allows users to explore and engage with the Metropolitan Museum of Art's collection. This app supports functionality for searching, viewing detailed information, managing favorites, and tracking search history using the Museum's public API.",
       img: ["/screenshots/webMETGalleryApp/home_screen.png"],
@@ -66,7 +66,7 @@ const PortfolioPage = () => {
     },
     {
       id: 9,
-      color: "from-red-300 to-violet-300",
+      color: "from-sky-300 to-white",
       title: "",
       desc: "",
       img: [],
@@ -127,7 +127,7 @@ const PortfolioPage = () => {
 
             <motion.div style={{ x }}className="flex">
             
-              <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-purple-300 to-violet-300">
+              <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-yellow-200 to-green-300">
               </div>
               {items.map((item) => (
                 <div 
@@ -169,7 +169,7 @@ const PortfolioPage = () => {
                     <p className='w-100 lg:w-[600px] lg:text-lg xl:w-[700px]'>{item.desc}</p>
                     
                       <Link href={item.link} className='flex justify-end'>
-                        <button className='m-4 p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold rounded-xl'>See Demo</button>
+                        <button className='m-4 p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold rounded-xl border border-black'>See Demo</button>
                       </Link>
                     
                   </div>
