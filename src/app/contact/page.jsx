@@ -144,7 +144,7 @@ const ContactPage = () => {
                 <div className="flex flex-col">
                   {success && (
                     <span className="text-green-600 font-semibold italic text-lg sm:text-sm">
-                      Your message has been sent successfully!
+                      Message Sent!
                     </span>
                   )}
                   {error && (
