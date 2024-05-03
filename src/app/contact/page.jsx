@@ -96,7 +96,7 @@ const ContactPage = () => {
             <form
             onSubmit={sendEmail}
             >
-              <div className="flex flex-col">
+              <div className="flex flex-col gap-1">
                 <span className='pb-2'>Dear rmon.dev,</span>
                 <span className='pb-2'>My name is:</span>
                 <textarea
