@@ -147,7 +147,7 @@ const PortfolioPage = () => {
 
                         item.img.length > 1 ? (
                           <div key={index} 
-                          className="w-28 h-52 sm:w-[98px] sm:h-[213px] md:w-[106px] md:h-[213px] lg:w-[202px] lg:h-[426px] xl:w-[230px] xl:h-[510px] border-2 border-black md:rounded-lg lg:rounded-2xl xl:rounded-2xl rounded-md relative overflow-hidden"
+                          className="w-24 h-52 sm:w-[92px] sm:h-[213px] md:w-[106px] md:h-[213px] lg:w-[202px] lg:h-[426px] xl:w-[230px] xl:h-[510px] border-2 border-black md:rounded-lg lg:rounded-2xl xl:rounded-2xl rounded-md relative overflow-hidden"
                           >
                             <Image src={imgPath} alt="" fill />
                         </div>
