@@ -44,7 +44,7 @@ const PortfolioPage = () => {
       id: 5,
       color: "from-blue-300 to-violet-300",
       title: "Android Multi App",
-      desc: "A multi-feature Android application that showcases various functionalities such as Camera, Phone and Messaging intents. This project has been extracted from a larger Android development repository for focused development, easier management, and portfolio showcasing.",
+      desc: "A multi-feature Android application that showcases various functionalities such as Camera, Phone and Messaging intents.",
       img: ["/screenshots/androidMultiApp/splash_screen.png","/screenshots/androidMultiApp/app_selection.png","/screenshots/androidMultiApp/calling_permission.png"],
       link: "https://github.com/rmondev/Android-Multi-App",
     },
@@ -81,9 +81,40 @@ const PortfolioPage = () => {
       transition={{duration: 1}}
       >
       <div className="h-[600vh] relative" ref={ref}>
-        <div className="w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-4xl sm:text-2xl md:text-4xl lg:text-8xl text-center">
-          My Works
-        </div>
+        
+          <div className="w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-5xl sm:text-5xl md:text-5xl lg:text-8xl text-center">
+
+          <div className='flex flex-col items-center justify-center gap-2'>
+            My Works
+            <motion.svg 
+            initial={{opacity:0.2, y:0}}
+            animate={{opacity:1, y:"10px"}}
+            transition={{duration:3, repeat:Infinity, ease: "easeInOut"}}
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            width={75}
+            height={75}
+          >
+            <path
+              d="M5 15C5 16.8565 5.73754 18.6371 7.05029 19.9498C8.36305 21.2626 10.1435 21.9999 12 21.9999C13.8565 21.9999 15.637 21.2626 16.9498 19.9498C18.2625 18.6371 19 16.8565 19 15V9C19 7.14348 18.2625 5.36305 16.9498 4.05029C15.637 2.73754 13.8565 2 12 2C10.1435 2 8.36305 2.73754 7.05029 4.05029C5.73754 5.36305 5 7.14348 5 9V15Z"
+              stroke="#000000"
+              strokeWidth="1"
+            ></path>
+            <path d="M12 6V14" stroke="#000000" strokeWidth="1"></path>
+            <path
+              d="M15 11L12 14L9 11"
+              stroke="#000000"
+              strokeWidth="1"
+            ></path>
+            </motion.svg>
+            </div>
+
+          </div>
+
+          
+
+        
           <div className="sticky top-0 flex h-screen gap-4 items-center overflow-hidden">
 
             <motion.div style={{ x }}className="flex">
@@ -93,8 +124,8 @@ const PortfolioPage = () => {
                   className={`h-screen w-screen flex items-center justify-center bg-gradient-to-r ${item.color}`}
                   key={item.id}
                 >
-                  <div className="flex flex-col gap-8 text-white">
-                    <h1 className="text-xl font-bold md:text-4xl lg:text-6xl xl:text-8xl">{item.title}</h1>
+                  <div className="mt-4 mb-4 flex flex-col gap-8 text-white">
+                    <h1 className="text-xl font-bold md:text-xl lg:text-4xl xl:text-4xl">{item.title}</h1>
                     <Link href={item.link}>
                       <div className="flex items-center justify-center gap-2">
 
@@ -125,10 +156,12 @@ const PortfolioPage = () => {
 
                       </div>
                     </Link>
-                    <p className='w-80 lg:w-[500px] lg:text-lg xl:w-[600px]'>{item.desc}</p>
-                    <Link href={item.link} className='flex justify-end'>
-                      <button className='m-4 p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold rounded-xl'>See Demo</button>
-                    </Link>
+                    <p className='w-100 lg:w-[600px] lg:text-lg xl:w-[700px]'>{item.desc}</p>
+                    
+                      <Link href={item.link} className='flex justify-end'>
+                        <button className='m-4 p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold rounded-xl'>See Demo</button>
+                      </Link>
+                    
                   </div>
                 </div>
               ))}
@@ -139,7 +172,7 @@ const PortfolioPage = () => {
         <h1 className="text-4xl sm:text-4xl md:text-6xl lg:text-8xl xl:text-8xl">Do you have a project?</h1>
         <div className="relative">
           <motion.svg
-            animate={{ rotate: 360 }}
+            animate={{ rotate: -360 }}
             transition={{ duration: 8, ease: "linear", repeat: Infinity }}
             viewBox="0 0 300 300"
             className="w-64 h-64 md:w-[500px] md:h-[500px] "
@@ -152,7 +185,7 @@ const PortfolioPage = () => {
             </defs>
             <text fill="#000">
               <textPath xlinkHref="#circlePath" className="text-xl">
-                Front-end Developer and UI Designer
+                Full-stack Developer and UI Designer
               </textPath>
             </text>
           </motion.svg>
