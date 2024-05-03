@@ -127,7 +127,7 @@ const Navbar = () => {
         
 
         {/* Responsive Menu */}
-        <div className='md:hidden'>
+        <div className='md:hidden select-none'>
           {/* Hamburger Menu BUtton*/}
           <button className='w-10 h-8 flex flex-col justify-between z-50 relative' 
             onClick={(()=> setOpen(!open))}
