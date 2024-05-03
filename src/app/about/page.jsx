@@ -161,7 +161,7 @@ const AboutPage = () => {
             <div className="">
 
               {/* EXPERIENCE LIST ITEM */}
-              <div className="flex justify-between h-48">
+              <div className="flex justify-between h-130 sm:h-130">
                 {/* LEFT */}
                   <motion.div
                   initial={{x:"-1000px"}} 
