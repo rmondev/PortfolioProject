@@ -42,7 +42,7 @@ const Homepage = () => {
             </p>
           
           {/* BUTTONS */}
-          <div className="flex w-full gap-4 items-center justify-center">
+          <div className="flex w-full gap-4 items-center justify-center mb-4">
             <Link href="/portfolio">
               <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white">View My Work</button>
             </Link>
