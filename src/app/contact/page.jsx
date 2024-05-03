@@ -13,7 +13,7 @@ const ContactPage = () => {
   const [user_name, setUsername] = useState('');
 
   const text = "Contact Me "
-  const form = useRef();
+  //const form = useRef();
 
   const templateParams = {
     to_name: 'rmon.dev',

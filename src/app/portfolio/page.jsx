@@ -10,6 +10,14 @@ const PortfolioPage = () => {
   const items = [
     {
       id: 1,
+      color: "from-violet-300 to-red-300",
+      title: "Chronicle: Your Ultimate Travel Companion ",
+      desc: "Chronicle is a mobile web app for effortless travel documentation and sharing. Capture your journeys with text, photos, and videos, and relive your adventures anytime, anywhere.",
+      img: ["/screenshots/webChronicleApp/main_screen.png", "/screenshots/webChronicleApp/home_screen.png", "/screenshots/webChronicleApp/forum.png"],
+      link: "https://github.com/Vaibhav-G-Parmar/PRJ566-Team_4",
+    },
+    {
+      id: 2,
       color: "from-red-300 to-blue-300",
       title: "iOS College Registration App",
       desc: "This is a college registration app I created using Swift to practice implementing UI Elements.",
@@ -17,7 +25,7 @@ const PortfolioPage = () => {
       link: "https://github.com/rmondev/iOS-College-Registration-App",
     },
     {
-      id: 2,
+      id: 3,
       color: "from-blue-300 to-violet-300",
       title: "iOS Movie Database App",
       desc: "This is a movie database application I created to practice and showcases search bar functionality, swipe functionality and alert controllers.",
@@ -25,7 +33,7 @@ const PortfolioPage = () => {
       link: "https://github.com/rmondev/iOS-Movie-Database-Application",
     },
     {
-      id: 3,
+      id: 4,
       color: "from-violet-300 to-red-300",
       title: "iOS Tax Filing Management App",
       desc: "This is an app I created to Tax Filing Management App to handle a customer database for a tax filing agency. This application implements iOS CoreData to enable database persistence.",
@@ -33,7 +41,7 @@ const PortfolioPage = () => {
       link: "https://github.com/rmondev/iOS-Tax-Filing-Management-App",
     },
     {
-      id: 4,
+      id: 5,
       color: "from-red-300 to-blue-300",
       title: "Android To-Do List App",
       desc: "This application showcases the implementation of various android UI Elements and Room database functionality.",
@@ -41,7 +49,7 @@ const PortfolioPage = () => {
       link: "https://github.com/rmondev/Android-ToDo-App",
     },
     {
-      id: 5,
+      id: 6,
       color: "from-blue-300 to-violet-300",
       title: "Android Multi App",
       desc: "A multi-feature Android application that showcases various functionalities such as Camera, Phone and Messaging intents.",
@@ -49,7 +57,7 @@ const PortfolioPage = () => {
       link: "https://github.com/rmondev/Android-Multi-App",
     },
     {
-      id: 6,
+      id: 7,
       color: "from-violet-300 to-red-300",
       title: "Met Gallery Web App",
       desc: "The Met Artwork App is an interactive web application that allows users to explore and engage with the Metropolitan Museum of Art's collection. This app supports functionality for searching, viewing detailed information, managing favorites, and tracking search history using the Museum's public API.",
@@ -57,7 +65,7 @@ const PortfolioPage = () => {
       link: "https://github.com/rmondev/MET-Gallery-Web-App",
     },
     {
-      id: 7,
+      id: 9,
       color: "from-red-300 to-violet-300",
       title: "",
       desc: "",
@@ -115,10 +123,12 @@ const PortfolioPage = () => {
           
 
         
-          <div className="sticky top-0 flex h-screen gap-4 items-center overflow-hidden">
+          <div className="sticky top-0 flex h-screen gap-8 items-center overflow-hidden">
 
             <motion.div style={{ x }}className="flex">
-              <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-purple-300 to-red-300"></div>
+            
+              <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-purple-300 to-violet-300">
+              </div>
               {items.map((item) => (
                 <div 
                   className={`h-screen w-screen flex items-center justify-center bg-gradient-to-r ${item.color}`}
@@ -135,7 +145,7 @@ const PortfolioPage = () => {
 
                         item.img.length > 1 ? (
                           <div key={index} 
-                          className="w-24 h-52 sm:w-[98px] sm:h-[213px] md:w-[98px] md:h-[213px] lg:w-[196px] lg:h-[426px] xl:w-[222px] xl:h-[510px] border-2 border-black md:rounded-lg lg:rounded-2xl xl:rounded-2xl rounded-md relative overflow-hidden"
+                          className="w-28 h-52 sm:w-[98px] sm:h-[213px] md:w-[106px] md:h-[213px] lg:w-[202px] lg:h-[426px] xl:w-[230px] xl:h-[510px] border-2 border-black md:rounded-lg lg:rounded-2xl xl:rounded-2xl rounded-md relative overflow-hidden"
                           >
                             <Image src={imgPath} alt="" fill />
                         </div>
