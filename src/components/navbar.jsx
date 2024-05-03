@@ -129,7 +129,7 @@ const Navbar = () => {
         {/* Responsive Menu */}
         <div className='md:hidden'>
           {/* Hamburger Menu BUtton*/}
-          <button className='w-10 h-8 flex flex-col justify-between z-50 relative' 
+          <button className='w-10 h-8 flex flex-col justify-between z-50 relative select-none' 
             onClick={(()=> setOpen(!open))}
             >
               <motion.div 
@@ -161,7 +161,7 @@ const Navbar = () => {
               
               <motion.div 
               variants={listItemVariants} 
-              className="" 
+              className="select-none" 
               key={link.title}>
                 <Link href={link.url} >
                   {link.title}
