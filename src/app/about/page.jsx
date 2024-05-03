@@ -2,7 +2,7 @@
 import Brain from '@/components/brain';
 import { motion, useInView, useScroll } from 'framer-motion';
 import { useRef } from 'react';
-
+import Link from 'next/link';
 const AboutPage = () => {
   const containerRef = useRef();
 
@@ -33,11 +33,14 @@ const AboutPage = () => {
             {/*BIO TITLE*/}
             <h1 className='font-bold text-2xl'>BIOGRAPHY</h1>
             {/*BIOGRAPHY TEXT*/}
-            <p className='text-lg'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc at volutpat elementum, risus nisl aliquam velit, vitae consequat.
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc at volutpat elementum, risus nisl aliquam velit, vitae consequat. </p>
+                  <p className=' text-sm'>
+            Hello! I’m Riccardo Moncada, a Computer Programming &amp; Analysis graduate from Seneca College, specializing in software development and data analysis. During my co-op at the Toronto Transit Commission, I enhanced internal systems using GUI, VBA, and SQL, and developed skills in languages including C, C++, Java, and JavaScript. I&apos;ve created projects ranging from an iOS Movie Database app to &ldquo;Chronicle&rdquo;, a web application for Travel Journaling and connecting with a network of like minded travelers, demonstrating my expertise in web development (HTML5, CSS, React/Next.js, Node.js) and mobile application development (Swift, SwiftUI, CoreData). Committed to excellence, I employ rigorous testing and Agile methodologies. I’m excited to join IT teams to explore innovative solutions. Let’s connect to discuss the future of technology and creativity. </p>
+            <Link href="/contact">
+              <button className="p-4 rounded-lg bg-black text-white">Contact Me</button>
+            </Link>
             {/*BIOGRAPHY QUOTE*/}
             <span className='italic'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Excellence starts in the mind before it shows in the work.
             </span>
             {/*BIOGRAPHY SIGNATURE*/}
             <div className="self-end">
@@ -167,13 +170,13 @@ const AboutPage = () => {
                   ref={experienceRef} 
                   className="w-1/3">
                     {/* JOB TITLE */}
-                    <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">Programmer Analyst</div>
+                    <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">Food Delivery Driver</div>
                     {/* JOB DESCRIPTION */}
-                    <div className="p-3 text-sm italic">The role focused on enhancing and automating internal systems to optimize functionality and efficiency.</div>
+                    <div className="p-3 text-sm italic">As a food delivery driver, efficiently handle orders from local restaurants, ensuring timely and safe deliveries with excellent customer service. Use GPS for optimal routing and maintain a clean, well-functioning vehicle. Adhere to all traffic laws and Uber Eats’ safety and hygiene guidelines.</div>
                     {/* JOB DATE */}
-                    <div className="p-3 text-red-400 text-sm font-semibold">2022 - 2023</div>
+                    <div className="p-3 text-red-400 text-sm font-semibold">2022 - Present</div>
                     {/* JOB COMPANY */}
-                    <div className="p-1 rounded bg-white text-sm font-semibold w-fit">Toronto Transit Commission</div>
+                    <div className="p-1 rounded bg-white text-sm font-semibold w-fit">Uber - Self-employed</div>
                   </motion.div>
                 {/* CENTER */}
                 <motion.div 
@@ -222,7 +225,8 @@ const AboutPage = () => {
                 {/* JOB TITLE */}
                 <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">Programmer Analyst</div>
                 {/* JOB DESCRIPTION */}
-                <div className="p-3 text-sm italic">The role focused on enhancing and automating internal systems to optimize functionality and efficiency.</div>
+                <div className="p-3 text-sm italic">
+Maintained strict adherence to coding standards and enhanced internal systems like Attendance and Workforce in Microsoft Access using VBA and SQL. Automated functions to increase efficiency and integrated with Microsoft Office applications, including Outlook. Conducted data analysis with CRUD operations and updated Intranet interfaces using jQuery, HTML5, CSS, and JavaScript to improve functionality and user experience.</div>
                 {/* JOB DATE */}
                 <div className="p-3 text-red-400 text-sm font-semibold">2022 - 2023</div>
                 {/* JOB COMPANY */}
@@ -240,13 +244,14 @@ const AboutPage = () => {
                   ref={experienceRef} 
                   className="w-1/3">
                     {/* JOB TITLE */}
-                    <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">Programmer Analyst</div>
+                    <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">Executive Sous Chef</div>
                     {/* JOB DESCRIPTION */}
-                    <div className="p-3 text-sm italic">The role focused on enhancing and automating internal systems to optimize functionality and efficiency.</div>
+                    <div className="p-3 text-sm italic">
+Led menu development with a focus on creativity and cost-effectiveness, conducting thorough costing to ensure profitability. Managed full kitchen operations, including inventory control and staff scheduling, while training kitchen staff for optimal performance. Supervised daily activities, promoting a positive work environment to enhance team productivity and morale. Prioritized kitchen safety and cleanliness through rigorous protocols and maintenance schedules.</div>
                     {/* JOB DATE */}
-                    <div className="p-3 text-red-400 text-sm font-semibold">2022 - 2023</div>
+                    <div className="p-3 text-red-400 text-sm font-semibold">2018 - 2020</div>
                     {/* JOB COMPANY */}
-                    <div className="p-1 rounded bg-white text-sm font-semibold w-fit">Toronto Transit Commission</div>
+                    <div className="p-1 rounded bg-white text-sm font-semibold w-fit">Great Canadian Gaming Corporation - GBHC</div>
                   </motion.div>
                 {/* CENTER */}
                 <motion.div 
