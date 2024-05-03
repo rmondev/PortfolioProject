@@ -127,7 +127,7 @@ const Navbar = () => {
         
 
         {/* Responsive Menu */}
-        <div className='md:hidden select-none'>
+        <div className='md:hidden'>
           {/* Hamburger Menu BUtton*/}
           <button className='w-10 h-8 flex flex-col justify-between z-50 relative' 
             onClick={(()=> setOpen(!open))}
@@ -135,17 +135,17 @@ const Navbar = () => {
               <motion.div 
               variants={topVariants} 
               animate={open ? "opened" : "closed"}
-              className='w-10 h-1 bg-black rounded origin-left'
+              className='w-10 h-1 bg-black rounded origin-left select-none'
               ></motion.div>
               <motion.div 
               variants={centerVariants} 
               animate={open ? "opened" : "closed"}
-              className='w-10 h-1 bg-black rounded'
+              className='w-10 h-1 bg-black rounded select-none'
               ></motion.div>
               <motion.div 
               variants={bottomVariants} 
               animate={open ? "opened" : "closed"}
-              className='w-10 h-1 bg-black rounded origin-left'
+              className='w-10 h-1 bg-black rounded origin-left select-none'
               ></motion.div>
           </button>
 
