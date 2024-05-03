@@ -87,15 +87,74 @@ const ContactPage = () => {
                 ))}
                 
               </div>
-              <div className='flex flex-col items-center justify-center'>😃</div>
+              <div className='flex flex-col items-center justify-center pb-2'>😃</div>
             </div>
             
           </div>
 
-          <div className="bg-red-500 h-5/6 lg:h-full lg:w-1/2 rounded-xl text-xl flex flex-col justify-center p-20 mb-8">
+          <div className="bg-red-50 h-5/6 lg:h-full lg:w-1/2 rounded-xl text-lg flex flex-col justify-center p-20 mb-8">
             <form
             onSubmit={sendEmail}
             >
+              <div className="flex flex-col">
+                <span>Dear rmon.dev,</span>
+                <span>My name is:</span>
+                <input
+                  type="name"
+                  value={user_name}
+                  onChange={(e) => setUsername(e.target.value)}
+                  className='bg-transparent border-b-2 border-b-black outline-none'
+                  name="user_name"
+                />
+
+                <div className="flex flex-col">
+                  <span>Message:</span>
+                  <textarea 
+                    rows={4}
+                    className='bg-transparent border-2 border-black'
+                    name="user_message"
+                    value={user_message}
+                    onChange={(e) => setUserMessage(e.target.value)}
+                  />
+                </div>
+
+                <div className="flex flex-col">
+                  <span>My email address is:</span>
+                    <input
+                      type="email"
+                      className='bg-transparent border-b-2 border-b-black outline-none'
+                      name="user_email"
+                      value={user_email}
+                      onChange={(e) => setUserEmail(e.target.value)}
+                      />
+                </div>
+
+                <div className="flex flex-col">
+                  <span className='p-2'>Regards</span>
+                    <button 
+                    className="bg-purple-200 rounded-xl font-semibold text-gray-600 p-2"
+                    type='submit'>
+                        Send
+                      </button>
+                </div>
+
+                <div className="flex flex-col">
+                  {success && (
+                    <span className="text-green-600 font-semibold italic text-lg sm:text-sm">
+                      Your message has been sent successfully!
+                    </span>
+                  )}
+                  {error && (
+                    <span className="text-red-600 font-semibold italic text-lg sm:text-sm">
+                      Something went wrong!
+                    </span>
+                  )}
+                </div>
+
+              </div>
+              
+
+
 
             </form>
           </div>
