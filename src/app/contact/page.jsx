@@ -100,11 +100,12 @@ const ContactPage = () => {
                 <span className='pb-2'>Dear rmon.dev,</span>
                 <span className='pb-2'>My name is:</span>
                 <textarea
+                  autoFocus
                   rows={1}
                   type="name"
                   value={user_name}
                   onChange={(e) => setUsername(e.target.value)}
-                  className='bg-transparent border-b-2 border-b-black outline-none'
+                  className='bg-transparent border-b-2 border-b-black outline-none resize-none'
                   name="user_name"
                 />
 
@@ -112,7 +113,7 @@ const ContactPage = () => {
                   <span>Message:</span>
                   <textarea 
                     rows={4}
-                    className='bg-transparent border-2 border-black pb-2'
+                    className='bg-transparent border-2 border-black pb-2 resize-none'
                     name="user_message"
                     value={user_message}
                     onChange={(e) => setUserMessage(e.target.value)}
@@ -124,7 +125,7 @@ const ContactPage = () => {
                     <textarea
                       rows={1}
                       type="email"
-                      className='bg-transparent border-b-2 border-b-black outline-none'
+                      className='bg-transparent border-b-2 border-b-black outline-none resize-none'
                       name="user_email"
                       value={user_email}
                       onChange={(e) => setUserEmail(e.target.value)}
