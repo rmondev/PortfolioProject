@@ -97,8 +97,8 @@ const ContactPage = () => {
             onSubmit={sendEmail}
             >
               <div className="flex flex-col">
-                <span>Dear rmon.dev,</span>
-                <span>My name is:</span>
+                <span className='pb-2'>Dear rmon.dev,</span>
+                <span className='pb-2'>My name is:</span>
                 <input
                   type="name"
                   value={user_name}
@@ -111,7 +111,7 @@ const ContactPage = () => {
                   <span>Message:</span>
                   <textarea 
                     rows={4}
-                    className='bg-transparent border-2 border-black'
+                    className='bg-transparent border-2 border-black pb-2'
                     name="user_message"
                     value={user_message}
                     onChange={(e) => setUserMessage(e.target.value)}
@@ -119,7 +119,7 @@ const ContactPage = () => {
                 </div>
 
                 <div className="flex flex-col">
-                  <span>My email address is:</span>
+                  <span className='pb-2'>My email address is:</span>
                     <input
                       type="email"
                       className='bg-transparent border-b-2 border-b-black outline-none'
