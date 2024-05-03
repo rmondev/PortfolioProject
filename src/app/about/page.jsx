@@ -31,7 +31,7 @@ const AboutPage = () => {
           {/*BIOGRAPHY CONTAINER*/}
           <div className="flex flex-col gap-12 justify-center">
             {/*BIO TITLE*/}
-            <h1 className='font-bold text-2xl'>BIOGRAPHY</h1>
+            <h1 className='font-bold text-2xl'>ABOUT ME</h1>
             {/*BIOGRAPHY TEXT*/}
                   <p className=' text-sm'>
             Hello! I’m Riccardo Moncada, a Computer Programming &amp; Analysis graduate from Seneca College, specializing in software development and data analysis. During my co-op at the Toronto Transit Commission, I enhanced internal systems using GUI, VBA, and SQL, and developed skills in languages including C, C++, Java, and JavaScript. I&apos;ve created projects ranging from an iOS Movie Database app to &ldquo;Chronicle&rdquo;, a web application for Travel Journaling and connecting with a network of like minded travelers, demonstrating my expertise in web development (HTML5, CSS, React/Next.js, Node.js) and mobile application development (Swift, SwiftUI, CoreData). Committed to excellence, I employ rigorous testing and Agile methodologies. I’m excited to join IT teams to explore innovative solutions. Let’s connect to discuss the future of technology and creativity. </p>
