@@ -129,15 +129,15 @@ const PortfolioPage = () => {
 
             <motion.div style={{ x }}className="flex">
             
-              <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-yellow-200 to-green-300">
-              </div>
+              <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-yellow-200 to-yellow-200"></div>
+              <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-yellow-200 to-green-300"></div>
               {items.map((item) => (
                 <div 
                   className={`h-screen w-screen flex items-center justify-center bg-gradient-to-r ${item.color}`}
                   key={item.id}
                 >
                   <div className="mt-4 mb-4 flex flex-col gap-8 text-white">
-                    <h1 className="text-xl font-bold md:text-xl lg:text-4xl xl:text-4xl">{item.title}</h1>
+                    <h1 className="pl-4 text-xl font-bold md:text-xl lg:text-4xl xl:text-4xl">{item.title}</h1>
                     <Link href={item.link}>
                       <div className="flex items-center justify-center gap-2">
 
@@ -152,7 +152,7 @@ const PortfolioPage = () => {
                             <Image src={imgPath} alt="" fill />
                         </div>
                          ) : (
-                        <div key={index} className="">
+                        <div key={index} className="p-2">
                           <Image 
                           className='border border-black'
                           src={imgPath} 
@@ -168,10 +168,10 @@ const PortfolioPage = () => {
 
                       </div>
                     </Link>
-                    <p className='w-100 lg:w-[600px] lg:text-lg xl:w-[700px]'>{item.desc}</p>
+                    <p className='pl-4 pr-4 w-100 lg:w-[600px] lg:text-lg xl:w-[700px]'>{item.desc}</p>
                     
-                      <Link href={item.link} className='flex justify-end'>
-                        <button className='m-4 p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold rounded-xl border border-black'>See Demo</button>
+                      <Link href={item.link} className='flex justify-end pr-4'>
+                        <button className='p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold rounded-xl'>See Demo</button>
                       </Link>
                     
                   </div>
