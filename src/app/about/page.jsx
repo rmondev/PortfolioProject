@@ -4,6 +4,43 @@ import { motion, useInView, useScroll } from 'framer-motion';
 import { useRef } from 'react';
 import Link from 'next/link';
 const AboutPage = () => {
+
+  const skillsList = [
+    "JavaScript", "TypeScript", "Shell Scripting", "C/C++ (STL)",
+    "VBA", "Java", "Kotlin", "Swift", "Python",
+    "HTML5", "CSS", "DOM",
+    "React.js", "Next.js", "Tailwind CSS",
+    "Jotai", "Redux",
+    "Node.js", "Express.js", "Firebase",
+    "PostgreSQL", "Oracle", "MS Access", "MongoDB", "Firebase Firestore",
+    "RESTful APIs", "Authentication (JWT, Firebase SSO)",
+    "Azure App Services", "Vercel",
+    "Android Studio", "Apple Xcode", "React Native",
+    "SQLite", "Core Data", "RoomDB",
+    "React Native Paper",
+    "Azure App Services (Deployment, Scaling, Monitoring)", "MongoDB Atlas",
+    "GitHub Actions", "Vercel",
+    "Firebase", "Azure",
+    "Secure authentication (JWT, Firebase SSO)", "Version Control (Git, GitHub)",
+    "GitHub", "MS Project", "Teams", "Zoom", "WebEx",
+    "Scrum", "Sprint Planning"
+  ];
+
+  const SkillListElement = () => {
+    return (
+      <>
+        {skillsList.map((skill, index) => (
+          <div 
+            key={index} 
+            className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black border border-black transition-all"
+          >
+            {skill}
+          </div>
+        ))}
+        </>
+    );
+  };
+
   const containerRef = useRef();
 
   const { scrollYProgress } = useScroll({ container: containerRef });
@@ -15,6 +52,7 @@ const AboutPage = () => {
   const experienceRef = useRef();
   const isExperienceRefInView = useInView(experienceRef, {once: true});
 
+  
 
   return (
 
@@ -103,7 +141,8 @@ const AboutPage = () => {
             transition={{delay:0.4}} 
             ref={skillRef}
             className="flex gap-4 flex-wrap">
-              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">JavaScript</div>
+              <SkillListElement/>
+              {/* <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">JavaScript</div>
               <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">TypeScript</div>
               <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">Next.js</div>
               <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">Node.js</div>
@@ -113,7 +152,7 @@ const AboutPage = () => {
               <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">MongoDB</div>
               <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">Express.js</div>
               <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">Redux</div>
-              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">Framer Motion</div>
+              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">Framer Motion</div> */}
               
             </motion.div>
 

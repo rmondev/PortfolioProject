@@ -38,8 +38,14 @@ const Homepage = () => {
           Welcome to my digital canvas, where innovation meets artistry. 
           Here, meticulous coding and a refined aesthetic sense unite, 
           presenting a portfolio rich with diverse projects that exemplify 
-          my dedication to excellence.
+          my dedication to excellence. 
             </p>
+
+          <p className="md:text-xl">
+          I am an emerging Full-Stack Developer passionate about building scalable and user-friendly applications. 
+          Experienced in web and mobile development, cloud deployment, and backend systems, with expertise in React.js, Node.js, and Azure services. 
+          Skilled in CI/CD, API integration, and Agile development, with the ability to collaborate in cross-functional teams.
+          </p>
           
           {/* BUTTONS */}
           <div className="flex w-full gap-4 items-center justify-center mb-4">
