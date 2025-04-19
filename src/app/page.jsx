@@ -20,12 +20,12 @@ const Homepage = () => {
 
         {/* IMAGE CONTAINER */}      
         <div className="h-3/4 lg:h-full lg:w-1/2 relative z-0">
-          <Image
+          {/* <Image
           src='/explosion_of_color.png'
           alt=''
           fill
           className='object-contain'
-          />
+          /> */}
         </div>
 
         {/* TEXT CONTAINER */}
