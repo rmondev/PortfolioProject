@@ -102,7 +102,7 @@ const PortfolioPage = () => {
     return (
       <Slider
         {...parentSettings}
-        className="w-full max-w-[95vw] mx-auto px-2 bg-gray-400"
+        className="w-full max-w-[95vw] mx-auto px-2 bg-stone-400"
       >
         {items.map((item) => {
           if (!item.title || !item.img.length || !item.githubLink) return null;
@@ -120,11 +120,11 @@ const PortfolioPage = () => {
                 {item.img.length > 1 ? (
                   <Slider
                     {...childSettings}
-                    className="w-[260px] sm:w-[300px] md:w-[340px] lg:w-[360px] xl:w-[380px] border border-black rounded-[2rem] bg-white px-1 pt-2 pb-10" // Smartphone look
+                    className="w-[260px] sm:w-[300px] md:w-[340px] lg:w-[360px] xl:w-[380px] border  border-black rounded-2xl bg-black px-1 pt-2 pb-10" // Smartphone look
                   >
                     {item.img.map((imgPath, index) => (
-                      <div key={index} className="px-1">
-                        <div className="relative w-full h-[500px] sm:h-[550px] md:h-[600px] rounded-[1.5rem] overflow-hidden">
+                      <div key={index} className="px-1 py-4 bg-black rounded-xl">
+                        <div className="relative w-full h-[500px] sm:h-[550px] md:h-[600px] rounded-xl overflow-hidden bg-black">
                           <Image
                             src={imgPath}
                             alt={`${item.title} screenshot ${index + 1}`}
@@ -200,7 +200,7 @@ const PortfolioPage = () => {
           
 
         
-          <div className="flex flex-col sm:flex-col md:flex-row lg:flex-row xl:flex-row justify-center items-center bg-gray-400">
+          <div className="flex flex-col sm:flex-col md:flex-row lg:flex-row xl:flex-row justify-center items-center bg-stone-400">
 
 
             {sliderProjectShowcase()}
@@ -208,7 +208,7 @@ const PortfolioPage = () => {
            
         </div>
       </div>
-      <div className="w-screen h-screen flex flex-col items-center justify-center text-center bg-gray-400">
+      <div className="w-screen h-screen flex flex-col items-center justify-center text-center bg-stone-400">
         <h1 className="text-4xl sm:text-4xl md:text-6xl lg:text-8xl xl:text-8xl">Do you have a project?</h1>
         <div className="relative">
           <motion.svg
