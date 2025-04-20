@@ -19,7 +19,7 @@ const Homepage = () => {
       <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-15 xl:px-16">
 
         {/* IMAGE CONTAINER */}      
-        <div className="h-3/4 lg:h-full lg:w-3/4 relative z-0">
+        <div className="h-3/4 lg:h-full lg:w-3/4 relative z-0 mb-20">
           <Image
           src='/gearKick.png'
           alt=''
