@@ -16,35 +16,36 @@ const Homepage = () => {
     transition={{duration: 1}}
     >
 
-      <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
+      <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-15 xl:px-16">
 
         {/* IMAGE CONTAINER */}      
-        <div className="h-3/4 lg:h-full lg:w-1/2 relative z-0">
-          {/* <Image
-          src='/explosion_of_color.png'
+        <div className="h-3/4 lg:h-full lg:w-3/4 relative z-0">
+          <Image
+          src='/gearKick.png'
           alt=''
           fill
           className='object-contain'
-          /> */}
+          />
         </div>
 
         {/* TEXT CONTAINER */}
-        <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-4 items-center justify-center relative z-20">
+        <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col items-center justify-center relative z-20 gap-8">
           {/* TITLE */}
-          <h1 className="text-3xl text-black font-semibold md:text-5xl">Crafting Tomorrow’s Technology, Today.</h1>
+          <h1 className="text-3xl text-black font-semibold md:text-5xl">Kicking Ideas Into Motion</h1>
           
+
+          
+
+
           {/*DESCRIPTION */}
           <p className="md:text-xl">
-          Welcome to my digital canvas, where innovation meets artistry. 
-          Here, meticulous coding and a refined aesthetic sense unite, 
-          presenting a portfolio rich with diverse projects that exemplify 
-          my dedication to excellence. 
+          Welcome to my developer portfolio — where every project is driven by precision, momentum, and purpose. Just like gears in motion, my code turns ideas into seamless, scalable applications.
+
             </p>
 
           <p className="md:text-xl">
-          I am an emerging Full-Stack Developer passionate about building scalable and user-friendly applications. 
-          Experienced in web and mobile development, cloud deployment, and backend systems, with expertise in React.js, Node.js, and Azure services. 
-          Skilled in CI/CD, API integration, and Agile development, with the ability to collaborate in cross-functional teams.
+          I’m a Full-Stack Developer with a passion for building intuitive web and mobile experiences. From front-end interfaces to backend logic and cloud deployment, I specialize in technologies like React.js, Node.js, and Azure. With a strong foundation in CI/CD, API integration, and Agile workflows, I bring both creativity and technical rigor to every build.
+
           </p>
           
           {/* BUTTONS */}
