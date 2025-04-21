@@ -10,7 +10,7 @@ const Homepage = () => {
   return (
 
   <motion.div 
-    className='h-full' 
+     className="min-h-[100dvh] lg:h-screen overflow-y-auto"
     initial={{y:"-200vh"}} 
     animate={{y:"0vh"}}
     transition={{duration: 1}}
@@ -19,14 +19,15 @@ const Homepage = () => {
       <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-15 xl:px-16 bg-stone-300">
 
         {/* IMAGE CONTAINER */}      
-        <div className="h-3/4 lg:h-full lg:w-3/4 relative z-0">
+        <div className="relative w-full h-[60vh] lg:h-full lg:w-3/4 z-0">
           <Image
-          src='/striker_and_gear.png'
-          alt=''
-          fill
-          className='object-contain'
+            src="/striker_and_gear.png"
+            alt=""
+            fill
+            className="object-contain"
           />
         </div>
+
 
         {/* TEXT CONTAINER */}
         <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col items-center justify-center relative z-20 gap-8 bg-stone-300">
