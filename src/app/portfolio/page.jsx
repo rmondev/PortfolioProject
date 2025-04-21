@@ -85,7 +85,7 @@ const PortfolioPage = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: false
+    arrows: true
   };
 
   const childSettings = {
@@ -103,7 +103,7 @@ const PortfolioPage = () => {
     return (
       <Slider
         {...parentSettings}
-        className="w-full max-w-[95vw] mx-auto px-2 bg-stone-300"
+        className="w-10/12 max-w-[95vw] mx-auto px-2 bg-stone-300"
       >
         {items.map((item) => {
           if (!item.title || !item.img.length || !item.githubLink) return null;

@@ -211,7 +211,11 @@ const AboutPage = () => {
                     {/* JOB TITLE */}
                     <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">Food Delivery Driver</div>
                     {/* JOB DESCRIPTION */}
-                    <div className="p-3 text-sm italic">As a food delivery driver, efficiently handle orders from local restaurants, ensuring timely and safe deliveries with excellent customer service. Use GPS for optimal routing and maintain a clean, well-functioning vehicle. Adhere to all traffic laws and Uber Eats’ safety and hygiene guidelines.</div>
+                    <div className="p-3 text-sm italic">
+                      <p>• Picked up food orders from restaurants and delivered them to customers using Ubers mobile application.</p>
+                      <p>• Utilized GPS navigation tools to determine the most efficient delivery routes.</p>
+                      <p>• Followed Uber Eats safety, hygiene, and traffic regulations.</p>
+                    </div>
                     {/* JOB DATE */}
                     <div className="p-3 text-black text-sm font-semibold">2022 - Present</div>
                     {/* JOB COMPANY */}
@@ -265,7 +269,11 @@ const AboutPage = () => {
                 <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">Programmer Analyst</div>
                 {/* JOB DESCRIPTION */}
                 <div className="p-3 text-sm italic">
-Maintained strict adherence to coding standards and enhanced internal systems like Attendance and Workforce in Microsoft Access using VBA and SQL. Automated functions to increase efficiency and integrated with Microsoft Office applications, including Outlook. Conducted data analysis with CRUD operations and updated Intranet interfaces using jQuery, HTML5, CSS, and JavaScript to improve functionality and user experience.</div>
+                  <p>• Updated, tested, and released system enhancements for internal attendance, workforce, and vehicle availability systems using GUI, VBA, and SQL in Microsoft Access databases.</p>
+                  <p>• Automated functions within Microsoft Access and integrated with Microsoft Office applications, including report generation and email automation via Outlook.</p>
+                  <p>• Applied data analysis techniques, including data manipulation (CRUD operations) and data format transformations.</p>
+                  <p>• Maintained and updated intranet pages using jQuery, HTML5, CSS, and JavaScript.</p>
+                </div>
                 {/* JOB DATE */}
                 <div className="p-3 text-black text-sm font-semibold">2022 - 2023</div>
                 {/* JOB COMPANY */}
@@ -286,7 +294,11 @@ Maintained strict adherence to coding standards and enhanced internal systems li
                     <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">Executive Sous Chef</div>
                     {/* JOB DESCRIPTION */}
                     <div className="p-3 text-sm italic">
-Led menu development with a focus on creativity and cost-effectiveness, conducting thorough costing to ensure profitability. Managed full kitchen operations, including inventory control and staff scheduling, while training kitchen staff for optimal performance. Supervised daily activities, promoting a positive work environment to enhance team productivity and morale. Prioritized kitchen safety and cleanliness through rigorous protocols and maintenance schedules.</div>
+                      <p>• Managed kitchen operations, including ordering supplies, inventory control, and staff scheduling.</p>
+                      <p>• Led menu development and cost optimization to balance quality and profitability.</p>
+                      <p>• Trained and supervised staff to ensure a collaborative and efficient work environment.</p>
+                      <p>• Maintained compliance with health and safety regulations through rigorous protocols and training.</p>
+                    </div>
                     {/* JOB DATE */}
                     <div className="p-3 text-black text-sm font-semibold">2018 - 2020</div>
                     {/* JOB COMPANY */}
