@@ -14,68 +14,32 @@ import "slick-carousel/slick/slick-theme.css";
 const PortfolioPage = () => {
 
   const items = [
+  
     {
       id: 1,
-      title: "Chronicle: Your Ultimate Travel Companion ",
-      platform: 'Mobile Web',
-      desc: "Chronicle is a mobile web app for effortless travel documentation and sharing. Capture your journeys with text, photos, and videos, and relive your adventures anytime, anywhere.",
-      img: ["/screenshots/webChronicleApp/main_screen.png", "/screenshots/webChronicleApp/home_screen.png", "/screenshots/webChronicleApp/forum.png"],
-      githubLink: "https://github.com/Vaibhav-G-Parmar/PRJ566-Team_4",
-      githubProjectLinks: {
-        frontend: 'https://github.com/rmondev/chronicle-web-app/tree/0be3cee11c94a4bfc64811db098981fa2ff003f0',
-        backend: 'https://github.com/rmondev/CHRONICLE_USERS_API/tree/7652d6680a762ee0b069b79a11006dfbc8ac8839'
-      },
-      link: 'https://chronicle-web-app-eight.vercel.app/',
+      title: "CucinAI - Your AI-powered kitchen companion for smarter, tastier recipes",
+      platform: '| Mobile Web App | Desktop Web App |',
+      desc: "A recipe organizer with AI-powered enhancements to keep meals exciting. This project helped me explore AI integration with OpenAI, authentication, and full-stack development while building a useful and interactive app. Easily organize your favorite recipes and use AI to generate similar or enhanced variations. Whether you're looking to switch things up while keeping familiar flavors or improve a dish with smart ingredient suggestions, this app helps you keep your meals exciting and fresh. Log in with Google and Try It Out!",
+      img: [
+        '/screenshots/cucinaiAIChef/Screenshot1.png', 
+        '/screenshots/cucinaiAIChef/Screenshot2.png',
+        '/screenshots/cucinaiAIChef/Screenshot3.png',
+        '/screenshots/cucinaiAIChef/Screenshot4.png',
+        '/screenshots/cucinaiAIChef/Screenshot5.png',
+        '/screenshots/cucinaiAIChef/Screenshot6.png',
+        '/screenshots/cucinaiAIChef/Screenshot7.png',
+        '/screenshots/cucinaiAIChef/Screenshot8.png',
+        '/screenshots/cucinaiAIChef/Screenshot9.png',
+        '/screenshots/cucinaiAIChef/Screenshot10.png',
+        '/screenshots/cucinaiAIChef/Screenshot11.png'
+      ],
+      githubLink: "https://github.com/rmondev/cucinai",
+      link: 'https://cucinai.vercel.app/',
     },
     {
       id: 2,
-      title: "iOS College Registration App",
-      platform: 'iOS',
-      desc: "This is a college registration app I created using Swift to practice implementing UI Elements.",
-      img: ["/screenshots/iOSCollegeRegApp/WelcomeScreen1.png","/screenshots/iOSCollegeRegApp/ExploreScreen2.png", "/screenshots/iOSCollegeRegApp/RegistrationScreen2.png"],
-      githubLink: "https://github.com/rmondev/iOS-College-Registration-App",
-      link: 'https://appetize.io/app/b_ekubowyrkxfhaml2zzsphzwh5y',
-    },
-    {
-      id: 3,
-      title: "iOS Movie Database App",
-      platform: 'iOS',
-      desc: "This is a movie database application I created to practice and showcases search bar functionality, swipe functionality and alert controllers.",
-      img: ["/screenshots/iOSMovieDBApp/WelcomeScreen.png","/screenshots/iOSMovieDBApp/FilmListing.png","/screenshots/iOSMovieDBApp/AddFilm.png"],
-      githubLink: "https://github.com/rmondev/iOS-Movie-Database-Application",
-      link: 'https://appetize.io/app/b_glvjthcirf6wkf2fdhgufrttya',
-    },
-    {
-      id: 4,
-      title: "iOS Tax Filing Management App",
-      platform: 'iOS',
-      desc: "This is an app I created to Tax Filing Management App to handle a customer database for a tax filing agency. This application implements iOS CoreData to enable database persistence.",
-      img: ["/screenshots/iOSTaxFilingApp/MainScreen.png","/screenshots/iOSTaxFilingApp/BeforeScreen.png","/screenshots/iOSTaxFilingApp/AfterScreen.png",],
-      githubLink: "https://github.com/rmondev/iOS-Tax-Filing-Management-App",
-      link: 'https://appetize.io/app/b_sfa3fvbzqebzlx3tgx4f5cwp2u',
-    },
-    {
-      id: 5,
-      title: "Android To-Do List App",
-      platform: 'Android',
-      desc: "This application showcases the implementation of various android UI Elements and Room database functionality.",
-      img: ["/screenshots/androidToDoApp/SplashScreen.png","/screenshots/androidToDoApp/AddNewToDoItem.png","/screenshots/androidToDoApp/NewToDoListItemAdded.png"],
-      githubLink: "https://github.com/rmondev/Android-ToDo-App",
-      link: 'https://appetize.io/app/b_4i4ze3qalnxlsipbdulxzikoqq',
-    },
-    {
-      id: 6,
-      title: "Android Multi App",
-      platform: 'Android',
-      desc: "A multi-feature Android application that showcases various functionalities such as Camera, Phone and Messaging intents.",
-      img: ["/screenshots/androidMultiApp/splash_screen.png","/screenshots/androidMultiApp/app_selection.png","/screenshots/androidMultiApp/calling_permission.png"],
-      githubLink: "https://github.com/rmondev/Android-Multi-App",
-      link: 'https://appetize.io/app/b_5kl22a5eofrcuzotistajtm2kq',
-    },
-    {
-      id: 7,
       title: "Met Gallery Web App",
-      platform: 'Mobile Web | Desktop Web',
+      platform: '| Mobile Web App | Desktop Web App |',
       desc: "The Met Artwork App is an interactive web application that allows users to explore and engage with the Metropolitan Museum of Art's collection. This app supports functionality for searching, viewing detailed information, managing favorites, and tracking search history using the Museum's public API.",
       img: [
         '/screenshots/webMETGalleryApp/Screenshot1.png', 
@@ -97,41 +61,114 @@ const PortfolioPage = () => {
       link: 'https://met-gallery-app.vercel.app/',
     },
     {
-      id: 8,
-      title: "CucinAI - Your AI-powered kitchen companion for smarter, tastier recipes",
-      platform: 'Mobile Web | Desktop Web',
-      desc: "A recipe organizer with AI-powered enhancements to keep meals exciting. This project helps me explore AI integration, authentication, and full-stack development while building a useful and interactive app. Easily organize your favorite recipes and use AI to generate similar or enhanced variations. Whether you're looking to switch things up while keeping familiar flavors or improve a dish with smart ingredient suggestions, this app helps you keep your meals exciting and fresh. Log in with Google and Try It Out!",
-      img: [
-        '/screenshots/cucinaiAIChef/Screenshot1.png', 
-        '/screenshots/cucinaiAIChef/Screenshot2.png',
-        '/screenshots/cucinaiAIChef/Screenshot3.png',
-        '/screenshots/cucinaiAIChef/Screenshot4.png',
-        '/screenshots/cucinaiAIChef/Screenshot5.png',
-        '/screenshots/cucinaiAIChef/Screenshot6.png',
-        '/screenshots/cucinaiAIChef/Screenshot7.png',
-        '/screenshots/cucinaiAIChef/Screenshot8.png',
-        '/screenshots/cucinaiAIChef/Screenshot9.png',
-        '/screenshots/cucinaiAIChef/Screenshot10.png',
-        '/screenshots/cucinaiAIChef/Screenshot11.png'
-      ],
-      githubLink: "https://github.com/rmondev/cucinai",
-      link: 'https://cucinai.vercel.app/',
-    },
-
-    {
-      id: 9,
+      id: 3,
       title: "Chef Claude - Your AI-powered kitchen companion for smarter, tastier recipes",
-      platform: 'Mobile Web | Desktop Web',
-      desc: "An AI powered recipe creation companion. Share a list of ingredients with Chef Claude, and the app will make a create a recipe for you to enjoy. ",
+      platform: '| Mobile Web App | Desktop Web App |',
+      desc: "An AI powered recipe creation companion. Share a list of ingredients with Chef Claude, and the app will make a create a recipe for you to enjoy. This project helped me explore AI integration,by exploring AI API models such as Claude and Hugging Face.",
       img: [
+        '/screenshots/chefClaudeApp/Screenshot1.png',
         '/screenshots/chefClaudeApp/Screenshot2.png',
         '/screenshots/chefClaudeApp/Screenshot3.png',
         '/screenshots/chefClaudeApp/Screenshot4.png',
-        '/screenshots/chefClaudeApp/Screenshot5.png',
       ],
       githubLink: "https://github.com/rmondev/Chef-Claude-App",
       link: 'https://chef-claude-app-seven.vercel.app/',
-    }
+    },
+    {
+      id: 4,
+      title: "Tenzies Game",
+      platform: '| Mobile Web App | Desktop Web App |',
+      desc: `Tenzies is a fast-paced dice game where players race to get all ten of their dice to show the same number. The first player to shout "Tenzies!" after achieving this wins. It's a simple, fun game that can be played by 2 or more players of almost any age. `,
+      img: [
+        '/screenshots/tenziesGame/Screenshot1.png',
+        '/screenshots/tenziesGame/Screenshot2.png',
+        '/screenshots/tenziesGame/Screenshot3.png',
+        '/screenshots/tenziesGame/Screenshot4.png',
+      ],
+      githubLink: "https://github.com/rmondev/Tenzies-Game",
+      link: 'https://tenzies-game-ecru-delta.vercel.app/',
+    },
+    {
+      id: 5,
+      title: "Health Tracker Ring Product Showcase Website",
+      platform: '| Mobile Web App | Desktop Web App |',
+      desc: "This is a mock product showcase website for a Health Tracker Ring. In this project I learned how to create a static product showcase website, stylizing components with images, video and with carousels that translate product information into beautiful and effectively informative visuals.",
+      img: [
+        '/screenshots/vitalHealthWebsite/Screenshot1.png', 
+        '/screenshots/vitalHealthWebsite/Screenshot2.png',
+        '/screenshots/vitalHealthWebsite/Screenshot3.png',
+        '/screenshots/vitalHealthWebsite/Screenshot4.png',
+        '/screenshots/vitalHealthWebsite/Screenshot5.png',
+        '/screenshots/vitalHealthWebsite/Screenshot6.png',
+        '/screenshots/vitalHealthWebsite/Screenshot7.png',
+        '/screenshots/vitalHealthWebsite/Screenshot8.png',
+        '/screenshots/vitalHealthWebsite/Screenshot9.png',
+        '/screenshots/vitalHealthWebsite/Screenshot10.png',
+        '/screenshots/vitalHealthWebsite/Screenshot11.png'
+      ],
+      githubLink: "https://github.com/rmondev/vital-health-ring-interstitial",
+      link: 'https://vital-health-ring-interstitial.vercel.app/',
+    },
+    {
+      id: 6,
+      title: "Chronicle: Your Ultimate Travel Companion ",
+      platform: '| Mobile Web App | Desktop Web App |',
+      desc: "Chronicle is a mobile web app for effortless travel documentation and sharing. Capture your journeys with text, photos, and videos, and relive your adventures anytime, anywhere.",
+      img: ["/screenshots/webChronicleApp/main_screen.png", "/screenshots/webChronicleApp/home_screen.png", "/screenshots/webChronicleApp/forum.png"],
+      githubLink: "https://github.com/Vaibhav-G-Parmar/PRJ566-Team_4",
+      githubProjectLinks: {
+        frontend: 'https://github.com/rmondev/chronicle-web-app/tree/0be3cee11c94a4bfc64811db098981fa2ff003f0',
+        backend: 'https://github.com/rmondev/CHRONICLE_USERS_API/tree/7652d6680a762ee0b069b79a11006dfbc8ac8839'
+      },
+      link: 'https://chronicle-web-app-eight.vercel.app/',
+    },
+    {
+      id: 7,
+      title: "iOS College Registration App",
+      platform: ' | iOS | ',
+      desc: "This is a college registration app I created using Swift to practice implementing UI Elements.",
+      img: ["/screenshots/iOSCollegeRegApp/WelcomeScreen1.png","/screenshots/iOSCollegeRegApp/ExploreScreen2.png", "/screenshots/iOSCollegeRegApp/RegistrationScreen2.png"],
+      githubLink: "https://github.com/rmondev/iOS-College-Registration-App",
+      link: 'https://appetize.io/app/b_ekubowyrkxfhaml2zzsphzwh5y',
+    },
+    {
+      id: 8,
+      title: "iOS Movie Database App",
+      platform: ' | iOS | ',
+      desc: "This is a movie database application I created to practice and showcases search bar functionality, swipe functionality and alert controllers.",
+      img: ["/screenshots/iOSMovieDBApp/WelcomeScreen.png","/screenshots/iOSMovieDBApp/FilmListing.png","/screenshots/iOSMovieDBApp/AddFilm.png"],
+      githubLink: "https://github.com/rmondev/iOS-Movie-Database-Application",
+      link: 'https://appetize.io/app/b_glvjthcirf6wkf2fdhgufrttya',
+    },
+    {
+      id: 9,
+      title: "iOS Tax Filing Management App",
+      platform: ' | iOS | ',
+      desc: "This is an app I created to Tax Filing Management App to handle a customer database for a tax filing agency. This application implements iOS CoreData to enable database persistence.",
+      img: ["/screenshots/iOSTaxFilingApp/MainScreen.png","/screenshots/iOSTaxFilingApp/BeforeScreen.png","/screenshots/iOSTaxFilingApp/AfterScreen.png",],
+      githubLink: "https://github.com/rmondev/iOS-Tax-Filing-Management-App",
+      link: 'https://appetize.io/app/b_sfa3fvbzqebzlx3tgx4f5cwp2u',
+    },
+    {
+      id: 10,
+      title: "Android To-Do List App",
+      platform: ' | Android |',
+      desc: "This application showcases the implementation of various android UI Elements and Room database functionality.",
+      img: ["/screenshots/androidToDoApp/SplashScreen.png","/screenshots/androidToDoApp/AddNewToDoItem.png","/screenshots/androidToDoApp/NewToDoListItemAdded.png"],
+      githubLink: "https://github.com/rmondev/Android-ToDo-App",
+      link: 'https://appetize.io/app/b_4i4ze3qalnxlsipbdulxzikoqq',
+    },
+    {
+      id: 11,
+      title: "Android Multi App",
+      platform: '| Android |',
+      desc: "A multi-feature Android application that showcases various functionalities such as Camera, Phone and Messaging intents.",
+      img: ["/screenshots/androidMultiApp/splash_screen.png","/screenshots/androidMultiApp/app_selection.png","/screenshots/androidMultiApp/calling_permission.png"],
+      githubLink: "https://github.com/rmondev/Android-Multi-App",
+      link: 'https://appetize.io/app/b_5kl22a5eofrcuzotistajtm2kq',
+    },
+   
+    
     
   ];
 
@@ -185,6 +222,9 @@ const PortfolioPage = () => {
               <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-black text-center">
                 {item.title}
               </h1>
+              <h2 className='text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold font-light text-black text-center mt-6'>
+                {item.platform}
+              </h2>
   
               <div className="w-full flex justify-center items-center p-6">
                 {item.img.length > 1 ? (
