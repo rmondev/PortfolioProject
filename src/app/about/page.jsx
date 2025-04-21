@@ -71,7 +71,7 @@ const AboutPage = () => {
             {/*BIO TITLE*/}
             <h1 className='font-bold text-2xl'>ABOUT ME</h1>
             {/*BIOGRAPHY TEXT*/}
-                  <p className=' text-sm'>
+                  <p className=' text-sm sm:text-sm md:text-lg lg:text-lg xl:text-lg'>
             Hello! I’m Riccardo Moncada, a Computer Programming &amp; Analysis graduate from Seneca College, specializing in software development and data analysis. During my co-op at the Toronto Transit Commission, I enhanced internal systems using GUI, VBA, and SQL, and developed skills in languages including C, C++, Java, and JavaScript. I&apos;ve created projects ranging from an iOS Movie Database app to &ldquo;Chronicle&rdquo;, a web application for Travel Journaling and connecting with a network of like minded travelers, demonstrating my expertise in web development (HTML5, CSS, React/Next.js, Node.js) and mobile application development (Swift, SwiftUI, CoreData). Committed to excellence, I employ rigorous testing and Agile methodologies. I’m excited to join IT teams to explore innovative solutions. Let’s connect to discuss the future of technology and creativity. </p>
             <Link href="/contact">
               <button className="p-4 rounded-lg bg-black text-white">Contact Me</button>
@@ -213,7 +213,7 @@ const AboutPage = () => {
                     {/* JOB DESCRIPTION */}
                     <div className="p-3 text-sm italic">As a food delivery driver, efficiently handle orders from local restaurants, ensuring timely and safe deliveries with excellent customer service. Use GPS for optimal routing and maintain a clean, well-functioning vehicle. Adhere to all traffic laws and Uber Eats’ safety and hygiene guidelines.</div>
                     {/* JOB DATE */}
-                    <div className="p-3 text-red-400 text-sm font-semibold">2022 - Present</div>
+                    <div className="p-3 text-black text-sm font-semibold">2022 - Present</div>
                     {/* JOB COMPANY */}
                     <div className="p-1 rounded bg-white text-sm font-semibold w-fit">Uber - Self-employed</div>
                   </motion.div>
@@ -227,7 +227,7 @@ const AboutPage = () => {
                   {/* LINE */}
                   <div className="w-1 h-full bg-gray-600 rounded relative">
                     {/* LINE CIRCLE */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-stone-400 bg-white -left-2"></div>
                   </div>
                 </motion.div>
                 {/* RIGHT */}
@@ -251,7 +251,7 @@ const AboutPage = () => {
               {/* LINE */}
               <div className="w-1 h-full bg-gray-600 rounded relative">
                 {/* LINE CIRCLE */}
-                <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+                <div className="absolute w-5 h-5 rounded-full ring-4 ring-stone-400 bg-white -left-2"></div>
               </div>
             </motion.div>
             {/* RIGHT */}
@@ -267,7 +267,7 @@ const AboutPage = () => {
                 <div className="p-3 text-sm italic">
 Maintained strict adherence to coding standards and enhanced internal systems like Attendance and Workforce in Microsoft Access using VBA and SQL. Automated functions to increase efficiency and integrated with Microsoft Office applications, including Outlook. Conducted data analysis with CRUD operations and updated Intranet interfaces using jQuery, HTML5, CSS, and JavaScript to improve functionality and user experience.</div>
                 {/* JOB DATE */}
-                <div className="p-3 text-red-400 text-sm font-semibold">2022 - 2023</div>
+                <div className="p-3 text-black text-sm font-semibold">2022 - 2023</div>
                 {/* JOB COMPANY */}
                 <div className="p-1 rounded bg-white text-sm font-semibold w-fit">Toronto Transit Commission</div>
               </motion.div>
@@ -288,7 +288,7 @@ Maintained strict adherence to coding standards and enhanced internal systems li
                     <div className="p-3 text-sm italic">
 Led menu development with a focus on creativity and cost-effectiveness, conducting thorough costing to ensure profitability. Managed full kitchen operations, including inventory control and staff scheduling, while training kitchen staff for optimal performance. Supervised daily activities, promoting a positive work environment to enhance team productivity and morale. Prioritized kitchen safety and cleanliness through rigorous protocols and maintenance schedules.</div>
                     {/* JOB DATE */}
-                    <div className="p-3 text-red-400 text-sm font-semibold">2018 - 2020</div>
+                    <div className="p-3 text-black text-sm font-semibold">2018 - 2020</div>
                     {/* JOB COMPANY */}
                     <div className="p-1 rounded bg-white text-sm font-semibold w-fit">Great Canadian Gaming Corporation - GBHC</div>
                   </motion.div>
@@ -302,7 +302,7 @@ Led menu development with a focus on creativity and cost-effectiveness, conducti
                   {/* LINE */}
                   <div className="w-1 h-full bg-gray-600 rounded relative">
                     {/* LINE CIRCLE */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-stone-400 bg-white -left-2"></div>
                   </div>
                 </motion.div>
                 {/* RIGHT */}

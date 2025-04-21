@@ -16,12 +16,12 @@ const Homepage = () => {
     transition={{duration: 1}}
     >
 
-      <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-15 xl:px-16">
+      <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-15 xl:px-16 bg-stone-300">
 
         {/* IMAGE CONTAINER */}      
         <div className="h-3/4 lg:h-full lg:w-3/4 relative z-0 mb-20">
           <Image
-          src='/gearKick.png'
+          src='/striker_and_gear.png'
           alt=''
           fill
           className='object-contain'
@@ -29,7 +29,7 @@ const Homepage = () => {
         </div>
 
         {/* TEXT CONTAINER */}
-        <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col items-center justify-center relative z-20 gap-8">
+        <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col items-center justify-center relative z-20 gap-8 bg-stone-300">
           {/* TITLE */}
           <h1 className="text-3xl text-black font-semibold md:text-5xl">Kicking Ideas Into Motion</h1>
           
@@ -49,7 +49,7 @@ const Homepage = () => {
           </p>
           
           {/* BUTTONS */}
-          <div className="flex w-full gap-4 items-center justify-center mb-4">
+          <div className="flex w-full gap-4 items-center justify-center p-6 ">
             <Link href="/portfolio">
               <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white">View My Work</button>
             </Link>

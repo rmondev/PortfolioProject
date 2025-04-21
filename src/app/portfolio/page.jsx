@@ -103,7 +103,7 @@ const PortfolioPage = () => {
     return (
       <Slider
         {...parentSettings}
-        className="w-full max-w-[95vw] mx-auto px-2 bg-stone-400"
+        className="w-full max-w-[95vw] mx-auto px-2 bg-stone-300"
       >
         {items.map((item) => {
           if (!item.title || !item.img.length || !item.githubLink) return null;
@@ -171,7 +171,7 @@ const PortfolioPage = () => {
           <div className="w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-5xl sm:text-5xl md:text-5xl lg:text-8xl text-center">
 
           <div className='flex flex-col items-center justify-center gap-2'>
-            My Works
+            My Projects
             <motion.svg 
             initial={{opacity:0.2, y:0}}
             animate={{opacity:1, y:"10px"}}
@@ -201,7 +201,7 @@ const PortfolioPage = () => {
           
 
         
-          <div className="flex flex-col sm:flex-col md:flex-row lg:flex-row xl:flex-row justify-center items-center bg-stone-400">
+          <div className="flex flex-col sm:flex-col md:flex-row lg:flex-row xl:flex-row justify-center items-center bg-stone-300">
 
 
             {sliderProjectShowcase()}
@@ -209,7 +209,7 @@ const PortfolioPage = () => {
            
         </div>
       </div>
-      <div className="w-screen h-screen flex flex-col items-center justify-center text-center bg-stone-400">
+      <div className="w-screen h-screen flex flex-col items-center justify-center text-center bg-stone-300">
         <h1 className="text-4xl sm:text-4xl md:text-6xl lg:text-8xl xl:text-8xl">Do you have a project?</h1>
         <div className="relative">
           <motion.svg
