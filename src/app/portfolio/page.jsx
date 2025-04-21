@@ -121,11 +121,11 @@ const PortfolioPage = () => {
                 {item.img.length > 1 ? (
                   <Slider
                     {...childSettings}
-                    className="w-[240px] sm:w-[300px] md:w-[340px] lg:w-[360px] xl:w-[380px] border  border-black rounded-2xl bg-black px-1 pt-2 pb-10" // Smartphone look
+                    className="w-[220px] sm:w-[300px] md:w-[340px] lg:w-[360px] xl:w-[380px] border  border-black rounded-2xl bg-black px-1 pt-2 pb-10" // Smartphone look
                   >
                     {item.img.map((imgPath, index) => (
                       <div key={index} className="px-1 py-4 bg-black rounded-xl">
-                        <div className="relative w-full h-[500px] sm:h-[550px] md:h-[600px] rounded-xl overflow-hidden bg-black">
+                        <div className="relative w-full h-[360px] sm:h-[550px] md:h-[600px] rounded-xl overflow-hidden bg-black">
                           <Image
                             src={imgPath}
                             alt={`${item.title} screenshot ${index + 1}`}
