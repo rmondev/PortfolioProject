@@ -16,7 +16,7 @@ const PortfolioPage = () => {
   const items = [
     {
       id: 1,
- 
+      link: 'https://chronicle-web-app-eight.vercel.app/',
       title: "Chronicle: Your Ultimate Travel Companion ",
       desc: "Chronicle is a mobile web app for effortless travel documentation and sharing. Capture your journeys with text, photos, and videos, and relive your adventures anytime, anywhere.",
       img: ["/screenshots/webChronicleApp/main_screen.png", "/screenshots/webChronicleApp/home_screen.png", "/screenshots/webChronicleApp/forum.png"],
@@ -24,7 +24,7 @@ const PortfolioPage = () => {
     },
     {
       id: 2,
-    
+      link: 'https://chronicle-web-app-eight.vercel.app/',
       title: "iOS College Registration App",
       desc: "This is a college registration app I created using Swift to practice implementing UI Elements.",
       img: ["/screenshots/iOSCollegeRegApp/WelcomeScreen1.png","/screenshots/iOSCollegeRegApp/ExploreScreen2.png", "/screenshots/iOSCollegeRegApp/RegistrationScreen2.png"],
@@ -32,7 +32,7 @@ const PortfolioPage = () => {
     },
     {
       id: 3,
-   
+      link: 'https://chronicle-web-app-eight.vercel.app/',
       title: "iOS Movie Database App",
       desc: "This is a movie database application I created to practice and showcases search bar functionality, swipe functionality and alert controllers.",
       img: ["/screenshots/iOSMovieDBApp/WelcomeScreen.png","/screenshots/iOSMovieDBApp/FilmListing.png","/screenshots/iOSMovieDBApp/AddFilm.png"],
@@ -40,7 +40,7 @@ const PortfolioPage = () => {
     },
     {
       id: 4,
-
+      link: 'https://chronicle-web-app-eight.vercel.app/',
       title: "iOS Tax Filing Management App",
       desc: "This is an app I created to Tax Filing Management App to handle a customer database for a tax filing agency. This application implements iOS CoreData to enable database persistence.",
       img: ["/screenshots/iOSTaxFilingApp/MainScreen.png","/screenshots/iOSTaxFilingApp/BeforeScreen.png","/screenshots/iOSTaxFilingApp/AfterScreen.png",],
@@ -48,7 +48,7 @@ const PortfolioPage = () => {
     },
     {
       id: 5,
-
+      link: 'https://chronicle-web-app-eight.vercel.app/',
       title: "Android To-Do List App",
       desc: "This application showcases the implementation of various android UI Elements and Room database functionality.",
       img: ["/screenshots/androidToDoApp/SplashScreen.png","/screenshots/androidToDoApp/AddNewToDoItem.png","/screenshots/androidToDoApp/NewToDoListItemAdded.png"],
@@ -56,7 +56,7 @@ const PortfolioPage = () => {
     },
     {
       id: 6,
-
+      link: 'https://chronicle-web-app-eight.vercel.app/',
       title: "Android Multi App",
       desc: "A multi-feature Android application that showcases various functionalities such as Camera, Phone and Messaging intents.",
       img: ["/screenshots/androidMultiApp/splash_screen.png","/screenshots/androidMultiApp/app_selection.png","/screenshots/androidMultiApp/calling_permission.png"],
@@ -64,13 +64,18 @@ const PortfolioPage = () => {
     },
     {
       id: 7,
-
+      link: 'https://chronicle-web-app-eight.vercel.app/',
       title: "Met Gallery Web App",
       desc: "The Met Artwork App is an interactive web application that allows users to explore and engage with the Metropolitan Museum of Art's collection. This app supports functionality for searching, viewing detailed information, managing favorites, and tracking search history using the Museum's public API.",
       img: ["/screenshots/webMETGalleryApp/home_screen.png"],
       githubLink: "https://github.com/rmondev/MET-Gallery-Web-App",
     }
   ];
+
+  const openAppInWindow = () => {
+    const url = "https://appetize.io/app/b_ekubowyrkxfhaml2zzsphzwh5y";
+    window.open(url, "_blank", "width=400,height=800,scrollbars=yes");
+  };
 
   const ref = useRef();
   const {scrollYProgress} = useScroll({target: ref});
@@ -99,6 +104,8 @@ const PortfolioPage = () => {
     swipe: false
   };
 
+  
+
   const sliderProjectShowcase = () => {
     return (
       <Slider
@@ -124,8 +131,8 @@ const PortfolioPage = () => {
                     className="w-[220px] sm:w-[300px] md:w-[340px] lg:w-[360px] xl:w-[380px] border  border-black rounded-2xl bg-black px-1 pt-2 pb-10" // Smartphone look
                   >
                     {item.img.map((imgPath, index) => (
-                      <div key={index} className="px-1 py-4 bg-black rounded-xl">
-                        <div className="relative w-full h-[360px] sm:h-[550px] md:h-[600px] rounded-xl overflow-hidden bg-black">
+                      <div key={index} className="py-2 bg-black rounded-xl">
+                        <div className="relative w-full h-[400px] sm:h-[550px] md:h-[600px] rounded-xl overflow-hidden bg-black">
                           <Image
                             src={imgPath}
                             alt={`${item.title} screenshot ${index + 1}`}
@@ -151,6 +158,24 @@ const PortfolioPage = () => {
               <p className="text-black text-sm sm:text-base md:text-lg px-4 max-w-2xl text-center mx-auto">
                 {item.desc}
               </p>
+
+              {/* BUTTONS */}
+              <div className="flex w-full gap-4 items-center justify-center p-6">
+              <Link href={item.githubLink} passHref legacyBehavior>
+                  <a target="_blank" rel="noopener noreferrer">
+                    <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white hover:bg-white hover:text-black hover:border-black border-white border-2">
+                      {'<code/>'}
+                    </button>
+                  </a>
+                </Link>
+                <Link href={item.link} passHref legacyBehavior>
+                  <a target="_blank" rel="noopener noreferrer">
+                    <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white hover:bg-white hover:text-black hover:border-black border-white border-2">
+                      Try it Out!
+                    </button>
+                  </a>
+                </Link>
+              </div>
 
             </div>
           );
