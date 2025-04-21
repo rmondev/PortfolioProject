@@ -40,7 +40,7 @@ const PortfolioPage = () => {
       id: 2,
       title: "Met Gallery Web App",
       platform: '| Mobile Web App | Desktop Web App |',
-      desc: "The Met Artwork App is an interactive web application that allows users to explore and engage with the Metropolitan Museum of Art's collection. This app supports functionality for searching, viewing detailed information, managing favorites, and tracking search history using the Museum's public API.",
+      desc: "The Met Gallery App is an interactive web application that allows users to explore and engage with the Metropolitan Museum of Art's collection. This app supports functionality for searching, viewing detailed information, managing favorites, and tracking search history using the Museum's public API.",
       img: [
         '/screenshots/webMETGalleryApp/Screenshot1.png', 
         '/screenshots/webMETGalleryApp/Screenshot2.png',
@@ -59,6 +59,10 @@ const PortfolioPage = () => {
         backend: 'https://github.com/rmondev/Seneca_WEB422_MET_USER_DB_API'
       },
       link: 'https://met-gallery-app.vercel.app/',
+      loginCredentials: {
+        userName: 'rmondev',
+        password: 'cosmo123'
+      }
     },
     {
       id: 3,
@@ -121,6 +125,10 @@ const PortfolioPage = () => {
         backend: 'https://github.com/rmondev/CHRONICLE_USERS_API/tree/7652d6680a762ee0b069b79a11006dfbc8ac8839'
       },
       link: 'https://chronicle-web-app-eight.vercel.app/',
+      loginCredentials: {
+        userName: 'rmondev',
+        password: 'pass1234!'
+      }
     },
     {
       id: 7,
@@ -167,9 +175,6 @@ const PortfolioPage = () => {
       githubLink: "https://github.com/rmondev/Android-Multi-App",
       link: 'https://appetize.io/app/b_5kl22a5eofrcuzotistajtm2kq',
     },
-   
-    
-    
   ];
 
   const openAppInWindow = (url) => {
@@ -257,9 +262,22 @@ const PortfolioPage = () => {
                 )}
               </div>
   
-              <p className="text-black text-sm sm:text-base md:text-lg px-4 max-w-2xl text-center mx-auto">
-                {item.desc}
-              </p>
+              <div className='mt-4'>
+                <h1 className='font-bold text-center text-lg'>Description</h1>  
+                <p className="text-black text-sm sm:text-base md:text-lg px-4 max-w-2xl text-center mx-auto">
+                  {item.desc}
+                </p>
+              </div>
+
+              { item.loginCredentials?.userName && item.loginCredentials?.password &&
+                <div className='text-black text-sm sm:text-base md:text-lg px-4 max-w-2xl text-center mx-auto mt-4'>
+                  <h1 className='font-bold'>Login Credentials:</h1>
+                  <div className='mt-2'>
+                    <p>Username: {item.loginCredentials.userName}</p>
+                    <p>Password: {item.loginCredentials.password}</p>
+                  </div>
+                </div>
+              }
 
               {/* BUTTONS */}
               <div className="flex w-full gap-4 items-center justify-center p-6">
