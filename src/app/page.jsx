@@ -10,7 +10,7 @@ const Homepage = () => {
   return (
 
   <motion.div 
-    className='h-screen' 
+    className='h-full' 
     initial={{y:"-200vh"}} 
     animate={{y:"0vh"}}
     transition={{duration: 1}}
@@ -19,7 +19,7 @@ const Homepage = () => {
       <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-15 xl:px-16 bg-stone-300">
 
         {/* IMAGE CONTAINER */}      
-        <div className="h-3/4 lg:h-full lg:w-3/4 relative z-0 mb-20">
+        <div className="h-3/4 lg:h-full lg:w-3/4 relative z-0">
           <Image
           src='/striker_and_gear.png'
           alt=''
