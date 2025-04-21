@@ -17,6 +17,7 @@ const PortfolioPage = () => {
     {
       id: 1,
       title: "Chronicle: Your Ultimate Travel Companion ",
+      platform: 'Mobile Web',
       desc: "Chronicle is a mobile web app for effortless travel documentation and sharing. Capture your journeys with text, photos, and videos, and relive your adventures anytime, anywhere.",
       img: ["/screenshots/webChronicleApp/main_screen.png", "/screenshots/webChronicleApp/home_screen.png", "/screenshots/webChronicleApp/forum.png"],
       githubLink: "https://github.com/Vaibhav-G-Parmar/PRJ566-Team_4",
@@ -29,6 +30,7 @@ const PortfolioPage = () => {
     {
       id: 2,
       title: "iOS College Registration App",
+      platform: 'iOS',
       desc: "This is a college registration app I created using Swift to practice implementing UI Elements.",
       img: ["/screenshots/iOSCollegeRegApp/WelcomeScreen1.png","/screenshots/iOSCollegeRegApp/ExploreScreen2.png", "/screenshots/iOSCollegeRegApp/RegistrationScreen2.png"],
       githubLink: "https://github.com/rmondev/iOS-College-Registration-App",
@@ -36,8 +38,8 @@ const PortfolioPage = () => {
     },
     {
       id: 3,
-      
       title: "iOS Movie Database App",
+      platform: 'iOS',
       desc: "This is a movie database application I created to practice and showcases search bar functionality, swipe functionality and alert controllers.",
       img: ["/screenshots/iOSMovieDBApp/WelcomeScreen.png","/screenshots/iOSMovieDBApp/FilmListing.png","/screenshots/iOSMovieDBApp/AddFilm.png"],
       githubLink: "https://github.com/rmondev/iOS-Movie-Database-Application",
@@ -46,6 +48,7 @@ const PortfolioPage = () => {
     {
       id: 4,
       title: "iOS Tax Filing Management App",
+      platform: 'iOS',
       desc: "This is an app I created to Tax Filing Management App to handle a customer database for a tax filing agency. This application implements iOS CoreData to enable database persistence.",
       img: ["/screenshots/iOSTaxFilingApp/MainScreen.png","/screenshots/iOSTaxFilingApp/BeforeScreen.png","/screenshots/iOSTaxFilingApp/AfterScreen.png",],
       githubLink: "https://github.com/rmondev/iOS-Tax-Filing-Management-App",
@@ -54,6 +57,7 @@ const PortfolioPage = () => {
     {
       id: 5,
       title: "Android To-Do List App",
+      platform: 'Android',
       desc: "This application showcases the implementation of various android UI Elements and Room database functionality.",
       img: ["/screenshots/androidToDoApp/SplashScreen.png","/screenshots/androidToDoApp/AddNewToDoItem.png","/screenshots/androidToDoApp/NewToDoListItemAdded.png"],
       githubLink: "https://github.com/rmondev/Android-ToDo-App",
@@ -62,6 +66,7 @@ const PortfolioPage = () => {
     {
       id: 6,
       title: "Android Multi App",
+      platform: 'Android',
       desc: "A multi-feature Android application that showcases various functionalities such as Camera, Phone and Messaging intents.",
       img: ["/screenshots/androidMultiApp/splash_screen.png","/screenshots/androidMultiApp/app_selection.png","/screenshots/androidMultiApp/calling_permission.png"],
       githubLink: "https://github.com/rmondev/Android-Multi-App",
@@ -70,6 +75,7 @@ const PortfolioPage = () => {
     {
       id: 7,
       title: "Met Gallery Web App",
+      platform: 'Mobile Web | Desktop Web',
       desc: "The Met Artwork App is an interactive web application that allows users to explore and engage with the Metropolitan Museum of Art's collection. This app supports functionality for searching, viewing detailed information, managing favorites, and tracking search history using the Museum's public API.",
       img: [
         '/screenshots/webMETGalleryApp/Screenshot1.png', 
@@ -81,7 +87,7 @@ const PortfolioPage = () => {
         '/screenshots/webMETGalleryApp/Screenshot7.png',
         '/screenshots/webMETGalleryApp/Screenshot8.png',
         '/screenshots/webMETGalleryApp/Screenshot9.png',
-        '/screenshots/webMETGalleryApp/Screenshot10.png'
+        '/screenshots/webMETGalleryApp/Screenshot10.png',
       ],
       githubLink: "https://github.com/rmondev/met-gallery-app",
       githubProjectLinks: {
@@ -93,22 +99,40 @@ const PortfolioPage = () => {
     {
       id: 8,
       title: "CucinAI - Your AI-powered kitchen companion for smarter, tastier recipes",
+      platform: 'Mobile Web | Desktop Web',
       desc: "A recipe organizer with AI-powered enhancements to keep meals exciting. This project helps me explore AI integration, authentication, and full-stack development while building a useful and interactive app. Easily organize your favorite recipes and use AI to generate similar or enhanced variations. Whether you're looking to switch things up while keeping familiar flavors or improve a dish with smart ingredient suggestions, this app helps you keep your meals exciting and fresh. Log in with Google and Try It Out!",
       img: [
-        '/screenshots/webMETGalleryApp/Screenshot1.png', 
-        '/screenshots/webMETGalleryApp/Screenshot2.png',
-        '/screenshots/webMETGalleryApp/Screenshot3.png',
-        '/screenshots/webMETGalleryApp/Screenshot4.png',
-        '/screenshots/webMETGalleryApp/Screenshot5.png',
-        '/screenshots/webMETGalleryApp/Screenshot6.png',
-        '/screenshots/webMETGalleryApp/Screenshot7.png',
-        '/screenshots/webMETGalleryApp/Screenshot8.png',
-        '/screenshots/webMETGalleryApp/Screenshot9.png',
-        '/screenshots/webMETGalleryApp/Screenshot10.png'
+        '/screenshots/cucinaiAIChef/Screenshot1.png', 
+        '/screenshots/cucinaiAIChef/Screenshot2.png',
+        '/screenshots/cucinaiAIChef/Screenshot3.png',
+        '/screenshots/cucinaiAIChef/Screenshot4.png',
+        '/screenshots/cucinaiAIChef/Screenshot5.png',
+        '/screenshots/cucinaiAIChef/Screenshot6.png',
+        '/screenshots/cucinaiAIChef/Screenshot7.png',
+        '/screenshots/cucinaiAIChef/Screenshot8.png',
+        '/screenshots/cucinaiAIChef/Screenshot9.png',
+        '/screenshots/cucinaiAIChef/Screenshot10.png',
+        '/screenshots/cucinaiAIChef/Screenshot11.png'
       ],
       githubLink: "https://github.com/rmondev/cucinai",
       link: 'https://cucinai.vercel.app/',
+    },
+
+    {
+      id: 9,
+      title: "Chef Claude - Your AI-powered kitchen companion for smarter, tastier recipes",
+      platform: 'Mobile Web | Desktop Web',
+      desc: "An AI powered recipe creation companion. Share a list of ingredients with Chef Claude, and the app will make a create a recipe for you to enjoy. ",
+      img: [
+        '/screenshots/chefClaudeApp/Screenshot2.png',
+        '/screenshots/chefClaudeApp/Screenshot3.png',
+        '/screenshots/chefClaudeApp/Screenshot4.png',
+        '/screenshots/chefClaudeApp/Screenshot5.png',
+      ],
+      githubLink: "https://github.com/rmondev/Chef-Claude-App",
+      link: 'https://chef-claude-app-seven.vercel.app/',
     }
+    
   ];
 
   const openAppInWindow = (url) => {
