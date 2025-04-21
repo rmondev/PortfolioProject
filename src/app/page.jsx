@@ -10,7 +10,7 @@ const Homepage = () => {
   return (
 
   <motion.div 
-    className='h-full' 
+    className='h-screen' 
     initial={{y:"-200vh"}} 
     animate={{y:"0vh"}}
     transition={{duration: 1}}
