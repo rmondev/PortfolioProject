@@ -93,7 +93,7 @@ const ContactPage = () => {
             
           </div>
 
-          <div className="bg-red-50 h-5/6 lg:h-full lg:w-1/2 rounded-xl text-lg flex flex-col justify-center p-10 mb-8">
+          <div className="bg-white h-5/6 lg:h-full lg:w-1/2 rounded-xl text-lg flex flex-col justify-center p-10 mb-8">
             <form
             onSubmit={sendEmail}
             >
@@ -136,7 +136,7 @@ const ContactPage = () => {
                 <div className="flex flex-col">
                   <span className='p-2'>Regards</span>
                     <button 
-                    className="bg-purple-200 rounded-xl font-semibold text-gray-600 p-2"
+                    className="p-4 rounded-lg ring-1 ring-black bg-black text-white hover:bg-white hover:text-black hover:border-black border-white border-2"
                     type='submit'>
                         Send
                       </button>
