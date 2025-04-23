@@ -18,7 +18,7 @@ const PortfolioPage = () => {
     {
       id: 1,
       title: "CucinAI - Your AI-powered kitchen companion for smarter, tastier recipes",
-      platform: '| Mobile Web App | Desktop Web App |',
+      platform: ' | Mobile Web App | Desktop Web App | ',
       desc: "A recipe organizer with AI-powered enhancements to keep meals exciting. This project helped me explore AI integration with OpenAI, authentication, and full-stack development while building a useful and interactive app. Easily organize your favorite recipes and use AI to generate similar or enhanced variations. Whether you're looking to switch things up while keeping familiar flavors or improve a dish with smart ingredient suggestions, this app helps you keep your meals exciting and fresh. Log in with Google and Try It Out!",
       img: [
         '/screenshots/cucinaiAIChef/Screenshot1.png', 
@@ -39,7 +39,7 @@ const PortfolioPage = () => {
     {
       id: 2,
       title: "Met Gallery Web App",
-      platform: '| Mobile Web App | Desktop Web App |',
+      platform: ' | Mobile Web App | Desktop Web App | ',
       desc: "The Met Gallery App is an interactive web application that allows users to explore and engage with the Metropolitan Museum of Art's collection. This app supports functionality for searching, viewing detailed information, managing favorites, and tracking search history using the Museum's public API.",
       img: [
         '/screenshots/webMETGalleryApp/Screenshot1.png', 
@@ -67,7 +67,7 @@ const PortfolioPage = () => {
     {
       id: 3,
       title: "Chef Claude - Your AI-powered kitchen companion for smarter, tastier recipes",
-      platform: '| Mobile Web App | Desktop Web App |',
+      platform: ' | Mobile Web App | Desktop Web App | ',
       desc: "An AI powered recipe creation companion. Share a list of ingredients with Chef Claude, and the app will make a create a recipe for you to enjoy. This project helped me explore AI integration,by exploring AI API models such as Claude and Hugging Face.",
       img: [
         '/screenshots/chefClaudeApp/Screenshot1.png',
@@ -95,7 +95,7 @@ const PortfolioPage = () => {
     {
       id: 5,
       title: "Health Tracker Ring Product Showcase Website",
-      platform: '| Mobile Web App | Desktop Web App |',
+      platform: ' | Mobile Web App | Desktop Web App | ',
       desc: "This is a mock product showcase website for a Health Tracker Ring. In this project I learned how to create a static product showcase website, stylizing components with images, video and with carousels that translate product information into beautiful and effectively informative visuals.",
       img: [
         '/screenshots/vitalHealthWebsite/Screenshot1.png', 
@@ -116,7 +116,7 @@ const PortfolioPage = () => {
     {
       id: 6,
       title: "Chronicle: Your Ultimate Travel Companion ",
-      platform: '| Mobile Web App | Desktop Web App |',
+      platform: ' | Mobile Web App | Desktop Web App | ',
       desc: "Chronicle is a mobile web app for effortless travel documentation and sharing. Capture your journeys with text, photos, and videos, and relive your adventures anytime, anywhere.",
       img: ["/screenshots/webChronicleApp/main_screen.png", "/screenshots/webChronicleApp/home_screen.png", "/screenshots/webChronicleApp/forum.png"],
       githubLink: "https://github.com/Vaibhav-G-Parmar/PRJ566-Team_4",
@@ -132,6 +132,18 @@ const PortfolioPage = () => {
     },
     {
       id: 7,
+      title: "Meme Generator",
+      platform: ' | Mobile Web App | Desktop Web App | ',
+      desc: "A simple Meme Generator App built with React and Vite to fetch a random meme image from api.imgflip.com, and overlay text entered by the user onto the image.",
+      img: [
+        "/screenshots/memeGenerator/Screenshot1.png",
+        "/screenshots/memeGenerator/Screenshot2.png", 
+      ],
+      githubLink: "https://github.com/rmondev/Meme-Generator.git",
+      link: 'https://meme-generator-delta-olive.vercel.app/',
+    },
+    {
+      id: 8,
       title: "iOS College Registration App",
       platform: ' | iOS | ',
       desc: "This is a college registration app I created using Swift to practice implementing UI Elements.",
@@ -140,7 +152,7 @@ const PortfolioPage = () => {
       link: 'https://appetize.io/app/b_ekubowyrkxfhaml2zzsphzwh5y',
     },
     {
-      id: 8,
+      id: 9,
       title: "iOS Movie Database App",
       platform: ' | iOS | ',
       desc: "This is a movie database application I created to practice and showcases search bar functionality, swipe functionality and alert controllers.",
@@ -149,7 +161,7 @@ const PortfolioPage = () => {
       link: 'https://appetize.io/app/b_glvjthcirf6wkf2fdhgufrttya',
     },
     {
-      id: 9,
+      id: 10,
       title: "iOS Tax Filing Management App",
       platform: ' | iOS | ',
       desc: "This is an app I created to Tax Filing Management App to handle a customer database for a tax filing agency. This application implements iOS CoreData to enable database persistence.",
@@ -158,7 +170,7 @@ const PortfolioPage = () => {
       link: 'https://appetize.io/app/b_sfa3fvbzqebzlx3tgx4f5cwp2u',
     },
     {
-      id: 10,
+      id: 11,
       title: "Android To-Do List App",
       platform: ' | Android |',
       desc: "This application showcases the implementation of various android UI Elements and Room database functionality.",
@@ -167,9 +179,9 @@ const PortfolioPage = () => {
       link: 'https://appetize.io/app/b_4i4ze3qalnxlsipbdulxzikoqq',
     },
     {
-      id: 11,
+      id: 12,
       title: "Android Multi App",
-      platform: '| Android |',
+      platform: ' | Android | ',
       desc: "A multi-feature Android application that showcases various functionalities such as Camera, Phone and Messaging intents.",
       img: ["/screenshots/androidMultiApp/splash_screen.png","/screenshots/androidMultiApp/app_selection.png","/screenshots/androidMultiApp/calling_permission.png"],
       githubLink: "https://github.com/rmondev/Android-Multi-App",
