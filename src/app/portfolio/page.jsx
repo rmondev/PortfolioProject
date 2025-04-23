@@ -7,6 +7,7 @@ import Link from 'next/link';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { techIcons } from '../../../public/iconsImageData/techIcons';
 
 
 
@@ -35,6 +36,9 @@ const PortfolioPage = () => {
       ],
       githubLink: "https://github.com/rmondev/cucinai",
       link: 'https://cucinai.vercel.app/',
+      techStack: techIcons.filter(icon =>
+        ["React", "Next.js", "Node.js","Tailwind CSS", "OpenAI", "Javascript", "Github" ].includes(icon.name)
+      )
     },
     {
       id: 2,
@@ -62,7 +66,10 @@ const PortfolioPage = () => {
       loginCredentials: {
         userName: 'rmondev',
         password: 'cosmo123'
-      }
+      },
+      techStack: techIcons.filter(icon =>
+        ["React", "Next.js", "Tailwind CSS", "Javascript", "Github", 'Express.js', 'MongoDB', 'Azure', 'Node.js' ].includes(icon.name)
+      )
     },
     {
       id: 3,
@@ -234,15 +241,17 @@ const PortfolioPage = () => {
           return (
             <div
               key={item.id}
-              className="flex flex-col items-center justify-center gap-6 py-8 px-4 rounded-2xl"
+              className="flex flex-col items-center content-center justify-center gap-6 py-8 px-4 rounded-2xl"
             >
               <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-black text-center">
                 {item.title}
               </h1>
-              <h2 className='text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold font-light text-black text-center mt-6'>
+              <h2 className='text-lg sm:text-xl md:text-2xl lg:text-3xl font-light text-black text-center mt-6'>
                 {item.platform}
               </h2>
-  
+
+            
+
               <div className="w-full flex justify-center items-center p-6">
                 {item.img.length > 1 ? (
                   <Slider
@@ -290,6 +299,16 @@ const PortfolioPage = () => {
                   </div>
                 </div>
               }
+
+              <h1 className='text-black text-sm font-bold sm:text-base md:text-lg px-4 max-w-2xl text-center mx-auto mt-4'>Built with:</h1>
+              <div className="flex flex-wrap justify-center items-center gap-4 mt-4 bg-white rounded-2xl p-4 mx-auto w-fit"> 
+                {item.techStack?.map((tech, index) => (
+                  <div key={index} className="flex flex-col items-center">
+                    <Image src={tech.url} alt={tech.name} width={40} height={40} />
+                    <p className="text-xs mt-1">{tech.name}</p>
+                  </div>
+                ))}
+              </div>
 
               {/* BUTTONS */}
               <div className="flex w-full gap-4 items-center justify-center p-6">
