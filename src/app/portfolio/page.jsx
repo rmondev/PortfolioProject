@@ -37,7 +37,7 @@ const PortfolioPage = () => {
       githubLink: "https://github.com/rmondev/cucinai",
       link: 'https://cucinai.vercel.app/',
       techStack: techIcons.filter(icon =>
-        ["VSCode", "React", "Next.js", "Node.js","Tailwind CSS", "OpenAI", "Javascript", "Github" ].includes(icon.name)
+        ["VSCode", "React", "Next.js", "Node.js","Tailwind CSS", "OpenAI", "JavaScript", "Github" ].includes(icon.name)
       )
     },
     {
@@ -68,7 +68,7 @@ const PortfolioPage = () => {
         password: 'cosmo123'
       },
       techStack: techIcons.filter(icon =>
-        ["VSCode","React", "Next.js", "Tailwind CSS", "Javascript", "Github", 'Express.js', 'MongoDB', 'Azure', 'Node.js' ].includes(icon.name)
+        ["VSCode","React", "Next.js", "Tailwind CSS", "JavaScript", "Github", 'Express.js', 'MongoDB', 'Azure', 'Node.js' ].includes(icon.name)
       )
     },
     {
@@ -85,7 +85,7 @@ const PortfolioPage = () => {
       githubLink: "https://github.com/rmondev/Chef-Claude-App",
       link: 'https://chef-claude-app-seven.vercel.app/',
       techStack: techIcons.filter(icon =>
-        ["VSCode","React", "Vite.js", "Node.js", 'CSS3', "Javascript", "Github" ].includes(icon.name)
+        ["VSCode","React", "Vite.js", "Node.js", 'CSS3', "JavaScript", "Github" ].includes(icon.name)
       )
     },
     {
@@ -102,7 +102,7 @@ const PortfolioPage = () => {
       githubLink: "https://github.com/rmondev/Tenzies-Game",
       link: 'https://tenzies-game-ecru-delta.vercel.app/',
       techStack: techIcons.filter(icon =>
-        ["VSCode","React", "Vite.js", "Node.js", "CSS3", "Javascript", "Github" ].includes(icon.name)
+        ["VSCode","React", "Vite.js", "Node.js", "CSS3", "JavaScript", "Github" ].includes(icon.name)
       )
     },
     {
@@ -126,7 +126,7 @@ const PortfolioPage = () => {
       githubLink: "https://github.com/rmondev/vital-health-ring-interstitial",
       link: 'https://vital-health-ring-interstitial.vercel.app/',
       techStack: techIcons.filter(icon =>
-        ["VSCode","React", "Next.js", "Tailwind CSS", "Typescript", "Github", 'Node.js' ].includes(icon.name)
+        ["VSCode","React", "Next.js", "Tailwind CSS", "TypeScript", "Github", 'Node.js' ].includes(icon.name)
       )
       
     },
@@ -147,7 +147,7 @@ const PortfolioPage = () => {
         password: 'pass1234!'
       },
       techStack: techIcons.filter(icon =>
-        ["VSCode","React", "Next.js", "Tailwind CSS", "Typescript", "Github", 'Express.js', 'MongoDB', 'Azure', 'Node.js' ].includes(icon.name)
+        ["VSCode","React", "Next.js", "Tailwind CSS", "TypeScript", "Github", 'Express.js', 'MongoDB', 'Azure', 'Node.js' ].includes(icon.name)
       )
       
     },
@@ -163,7 +163,7 @@ const PortfolioPage = () => {
       githubLink: "https://github.com/rmondev/Meme-Generator.git",
       link: 'https://meme-generator-delta-olive.vercel.app/',
       techStack: techIcons.filter(icon =>
-        ["VSCode","React", "Vite.js", "Node.js", "CSS3", "Javascript", "Github" ].includes(icon.name)
+        ["VSCode","React", "Vite.js", "Node.js", "CSS3", "JavaScript", "Github" ].includes(icon.name)
       )
     },
     {
@@ -322,15 +322,6 @@ const PortfolioPage = () => {
                 </p>
               </div>
 
-              { item.loginCredentials?.userName && item.loginCredentials?.password &&
-                <div className='text-black text-sm sm:text-base md:text-lg px-4 max-w-2xl text-center mx-auto mt-4'>
-                  <h1 className='font-bold'>Login Credentials:</h1>
-                  <div className='mt-2'>
-                    <p>Username: {item.loginCredentials.userName}</p>
-                    <p>Password: {item.loginCredentials.password}</p>
-                  </div>
-                </div>
-              }
 
               <h1 className='text-black text-sm font-bold sm:text-base md:text-lg px-4 max-w-2xl text-center mx-auto mt-4'>Built with:</h1>
               <div className="flex flex-wrap justify-center items-center gap-4 mt-4 bg-white rounded-2xl p-4 mx-auto w-fit"> 
@@ -341,6 +332,19 @@ const PortfolioPage = () => {
                   </div>
                 ))}
               </div>
+
+              { item.loginCredentials?.userName && item.loginCredentials?.password &&
+                <div className='text-black text-sm sm:text-base md:text-lg px-4 max-w-2xl text-center mx-auto mt-4'>
+                  <h1 className='font-bold'>Login Credentials:</h1>
+                  <div className='mt-2'>
+                    <p>Username: {item.loginCredentials.userName}</p>
+                    <p>Password: {item.loginCredentials.password}</p>
+                  </div>
+                </div>
+              }
+
+              
+            
 
               {/* BUTTONS */}
               <div className="flex w-full gap-4 items-center justify-center p-6">
