@@ -223,7 +223,7 @@ const PortfolioPage = () => {
       githubLink: "https://github.com/rmondev/Android-Multi-App",
       link: 'https://appetize.io/app/b_5kl22a5eofrcuzotistajtm2kq',
       techStack: techIcons.filter(icon =>
-        ['Android Studio','Java', 'SQLite'].includes(icon.name)
+        ['Android Studio','Java'].includes(icon.name)
       )
     },
   ];
