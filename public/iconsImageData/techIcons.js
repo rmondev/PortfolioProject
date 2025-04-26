@@ -6,7 +6,10 @@ export const techIcons = [
     { name: "React", type: "framework", url: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" },
     { name: "Redux", type: "framework", url: "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" },
     { name: "Tailwind CSS", type: "framework", url: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" },
-  
+    { name: "Vite.js", type: "framework", url: "https://raw.githubusercontent.com/devicons/devicon/master/icons/vitejs/vitejs-original.svg" },
+
+    
+
     // Programming Languages
     { name: "C", type: "language", url: "https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" },
     { name: "C++", type: "language", url: "https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" },
@@ -32,16 +35,23 @@ export const techIcons = [
     { name: "Node.js", type: "tool", url: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" },
     { name: "Oracle", type: "tool", url: "https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg" },
     { name: "Postman", type: "tool", url: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" },
+    { name: "OpenAI", type: "tool", url: "https://upload.vectorlogo.zone/logos/openai/images/2d0c228b-22e2-44ae-8fbd-d1d7646605c2.svg" },
+    { name: "Android Studio", type: "tool", url: "https://raw.githubusercontent.com/devicons/devicon/master/icons/androidstudio/androidstudio-original.svg" },
+    { name: "XCode", type: "tool", url: "https://raw.githubusercontent.com/devicons/devicon/master/icons/xcode/xcode-original.svg" },
+    { name: "VSCode", type: "tool", url: "https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" },
+
+   
+
+   
+   
   
     // Databases
     { name: "MongoDB", type: "database", url: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" },
     { name: "MySQL", type: "database", url: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" },
     { name: "PostgreSQL", type: "database", url: "https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" },
     { name: "Firebase", type: "database", url: "https://raw.githubusercontent.com/devicons/devicon/master/icons/firebase/firebase-original.svg" },
+    { name: "SQLite", type: "database", url: "https://raw.githubusercontent.com/devicons/devicon/master/icons/sqlite/sqlite-original.svg" },
     
-    
-    { name: "", type: "", url: "https://raw.githubusercontent.com/devicons/devicon/master/icons//-original.svg" },
-    { name: "", type: "", url: "https://raw.githubusercontent.com/devicons/devicon/master/icons//-original.svg" },
   
     // Preprocessors
     { name: "Sass", type: "preprocessor", url: "https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" }

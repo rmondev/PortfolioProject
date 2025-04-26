@@ -37,7 +37,7 @@ const PortfolioPage = () => {
       githubLink: "https://github.com/rmondev/cucinai",
       link: 'https://cucinai.vercel.app/',
       techStack: techIcons.filter(icon =>
-        ["React", "Next.js", "Node.js","Tailwind CSS", "OpenAI", "Javascript", "Github" ].includes(icon.name)
+        ["VSCode", "React", "Next.js", "Node.js","Tailwind CSS", "OpenAI", "Javascript", "Github" ].includes(icon.name)
       )
     },
     {
@@ -68,7 +68,7 @@ const PortfolioPage = () => {
         password: 'cosmo123'
       },
       techStack: techIcons.filter(icon =>
-        ["React", "Next.js", "Tailwind CSS", "Javascript", "Github", 'Express.js', 'MongoDB', 'Azure', 'Node.js' ].includes(icon.name)
+        ["VSCode","React", "Next.js", "Tailwind CSS", "Javascript", "Github", 'Express.js', 'MongoDB', 'Azure', 'Node.js' ].includes(icon.name)
       )
     },
     {
@@ -84,6 +84,9 @@ const PortfolioPage = () => {
       ],
       githubLink: "https://github.com/rmondev/Chef-Claude-App",
       link: 'https://chef-claude-app-seven.vercel.app/',
+      techStack: techIcons.filter(icon =>
+        ["VSCode","React", "Vite.js", "Node.js", 'CSS3', "Javascript", "Github" ].includes(icon.name)
+      )
     },
     {
       id: 4,
@@ -98,6 +101,9 @@ const PortfolioPage = () => {
       ],
       githubLink: "https://github.com/rmondev/Tenzies-Game",
       link: 'https://tenzies-game-ecru-delta.vercel.app/',
+      techStack: techIcons.filter(icon =>
+        ["VSCode","React", "Vite.js", "Node.js", "CSS3", "Javascript", "Github" ].includes(icon.name)
+      )
     },
     {
       id: 5,
@@ -119,6 +125,10 @@ const PortfolioPage = () => {
       ],
       githubLink: "https://github.com/rmondev/vital-health-ring-interstitial",
       link: 'https://vital-health-ring-interstitial.vercel.app/',
+      techStack: techIcons.filter(icon =>
+        ["VSCode","React", "Next.js", "Tailwind CSS", "Typescript", "Github", 'Node.js' ].includes(icon.name)
+      )
+      
     },
     {
       id: 6,
@@ -135,7 +145,11 @@ const PortfolioPage = () => {
       loginCredentials: {
         userName: 'rmondev',
         password: 'pass1234!'
-      }
+      },
+      techStack: techIcons.filter(icon =>
+        ["VSCode","React", "Next.js", "Tailwind CSS", "Typescript", "Github", 'Express.js', 'MongoDB', 'Azure', 'Node.js' ].includes(icon.name)
+      )
+      
     },
     {
       id: 7,
@@ -148,6 +162,9 @@ const PortfolioPage = () => {
       ],
       githubLink: "https://github.com/rmondev/Meme-Generator.git",
       link: 'https://meme-generator-delta-olive.vercel.app/',
+      techStack: techIcons.filter(icon =>
+        ["VSCode","React", "Vite.js", "Node.js", "CSS3", "Javascript", "Github" ].includes(icon.name)
+      )
     },
     {
       id: 8,
@@ -157,6 +174,9 @@ const PortfolioPage = () => {
       img: ["/screenshots/iOSCollegeRegApp/WelcomeScreen1.png","/screenshots/iOSCollegeRegApp/ExploreScreen2.png", "/screenshots/iOSCollegeRegApp/RegistrationScreen2.png"],
       githubLink: "https://github.com/rmondev/iOS-College-Registration-App",
       link: 'https://appetize.io/app/b_ekubowyrkxfhaml2zzsphzwh5y',
+      techStack: techIcons.filter(icon =>
+        ['XCode','Swift'].includes(icon.name)
+      )
     },
     {
       id: 9,
@@ -166,6 +186,9 @@ const PortfolioPage = () => {
       img: ["/screenshots/iOSMovieDBApp/WelcomeScreen.png","/screenshots/iOSMovieDBApp/FilmListing.png","/screenshots/iOSMovieDBApp/AddFilm.png"],
       githubLink: "https://github.com/rmondev/iOS-Movie-Database-Application",
       link: 'https://appetize.io/app/b_glvjthcirf6wkf2fdhgufrttya',
+      techStack: techIcons.filter(icon =>
+        ['XCode','Swift', 'SQLite'].includes(icon.name)
+      )
     },
     {
       id: 10,
@@ -175,6 +198,9 @@ const PortfolioPage = () => {
       img: ["/screenshots/iOSTaxFilingApp/MainScreen.png","/screenshots/iOSTaxFilingApp/BeforeScreen.png","/screenshots/iOSTaxFilingApp/AfterScreen.png",],
       githubLink: "https://github.com/rmondev/iOS-Tax-Filing-Management-App",
       link: 'https://appetize.io/app/b_sfa3fvbzqebzlx3tgx4f5cwp2u',
+      techStack: techIcons.filter(icon =>
+        ['XCode','Swift', 'SQLite'].includes(icon.name)
+      )
     },
     {
       id: 11,
@@ -184,6 +210,9 @@ const PortfolioPage = () => {
       img: ["/screenshots/androidToDoApp/SplashScreen.png","/screenshots/androidToDoApp/AddNewToDoItem.png","/screenshots/androidToDoApp/NewToDoListItemAdded.png"],
       githubLink: "https://github.com/rmondev/Android-ToDo-App",
       link: 'https://appetize.io/app/b_4i4ze3qalnxlsipbdulxzikoqq',
+      techStack: techIcons.filter(icon =>
+        ['Android Studio','Java', 'SQLite'].includes(icon.name)
+      )
     },
     {
       id: 12,
@@ -193,6 +222,9 @@ const PortfolioPage = () => {
       img: ["/screenshots/androidMultiApp/splash_screen.png","/screenshots/androidMultiApp/app_selection.png","/screenshots/androidMultiApp/calling_permission.png"],
       githubLink: "https://github.com/rmondev/Android-Multi-App",
       link: 'https://appetize.io/app/b_5kl22a5eofrcuzotistajtm2kq',
+      techStack: techIcons.filter(icon =>
+        ['Android Studio','Java', 'SQLite'].includes(icon.name)
+      )
     },
   ];
 
