@@ -351,20 +351,22 @@ const PortfolioPage = () => {
               
               {item.githubProjectLinks?.frontend && item.githubProjectLinks?.backend ? (
                 <>
-                  <Link href={item.githubProjectLinks.frontend} passHref legacyBehavior>
-                    <a target="_blank" rel="noopener noreferrer">
-                      <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white hover:bg-white hover:text-black hover:border-black border-white border-2">
+
+                    
+                      <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white hover:bg-white hover:text-black hover:border-black border-white border-2"
+                      onClick={() => openAppInWindow(item.githubProjectLinks.frontend)}>
                         {'Frontend <code/>'}
                       </button>
-                    </a>
-                  </Link>
-                  <Link href={item.githubProjectLinks.backend} passHref legacyBehavior>
-                    <a target="_blank" rel="noopener noreferrer">
-                      <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white hover:bg-white hover:text-black hover:border-black border-white border-2">
+                   
+               
+                 
+                    
+                      <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white hover:bg-white hover:text-black hover:border-black border-white border-2"
+                      onClick={() => openAppInWindow(item.githubProjectLinks.backend)}>
                         {'Backend <code/>'}
                       </button>
-                    </a>
-                  </Link>
+                    
+                
                   <button 
                     className="p-4 rounded-lg ring-1 ring-black bg-black text-white hover:bg-white hover:text-black hover:border-black border-white border-2"
                     onClick={() => openAppInWindow(item.link)}
@@ -374,13 +376,14 @@ const PortfolioPage = () => {
                 </>
               ) : (
                 <>
-                  <Link href={item.githubLink} passHref legacyBehavior>
-                    <a target="_blank" rel="noopener noreferrer">
-                      <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white hover:bg-white hover:text-black hover:border-black border-white border-2">
+                  
+                    
+                      <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white hover:bg-white hover:text-black hover:border-black border-white border-2"
+                      onClick={() => openAppInWindow(item.githubLink)}>
                         {'<code/>'}
                       </button>
-                    </a>
-                  </Link>
+                   
+                
                   <button 
                     className="p-4 rounded-lg ring-1 ring-black bg-black text-white hover:bg-white hover:text-black hover:border-black border-white border-2"
                     onClick={() => openAppInWindow(item.link)}
