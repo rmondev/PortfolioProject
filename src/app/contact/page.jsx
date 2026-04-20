@@ -55,9 +55,7 @@ const ContactPage = () => {
           setError(false);
       }, 5000);
       });
-    
-    
-  }
+    }
 
   return (
     <motion.div 
