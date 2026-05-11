@@ -183,6 +183,7 @@ const PortfolioPage = () => {
     },
     {
       id: 7,
+      hidden: true,
       title: "Meme Generator",
       platform: ' | Mobile Web App | Desktop Web App | ',
       desc: "A simple Meme Generator App built with React and Vite to fetch a random meme image from api.imgflip.com, and overlay text entered by the user onto the image.",
@@ -210,6 +211,7 @@ const PortfolioPage = () => {
     },
     {
       id: 9,
+      hidden: true,
       title: "iOS Movie Database App",
       platform: ' | iOS | ',
       desc: "This is a movie database application I created to practice and showcases search bar functionality, swipe functionality and alert controllers.",
@@ -222,6 +224,7 @@ const PortfolioPage = () => {
     },
     {
       id: 10,
+      hidden: true,
       title: "iOS Tax Filing Management App",
       platform: ' | iOS | ',
       desc: "This is an app I created to Tax Filing Management App to handle a customer database for a tax filing agency. This application implements iOS CoreData to enable database persistence.",
@@ -234,6 +237,7 @@ const PortfolioPage = () => {
     },
     {
       id: 11,
+      hidden: true,
       title: "Android To-Do List App",
       platform: ' | Android |',
       desc: "This application showcases the implementation of various android UI Elements and Room database functionality.",
@@ -246,6 +250,7 @@ const PortfolioPage = () => {
     },
     {
       id: 12,
+      hidden: true,
       title: "Android Multi App",
       platform: ' | Android | ',
       desc: "A multi-feature Android application that showcases various functionalities such as Camera, Phone and Messaging intents.",
@@ -298,7 +303,7 @@ const PortfolioPage = () => {
         className="w-10/12 max-w-[95vw] mx-auto px-2 bg-stone-300"
       >
         {items.map((item) => {
-          if (!item.title || !item.githubLink) return null;
+          if (!item.title || !item.githubLink || item.hidden) return null;
   
           return (
             <div
