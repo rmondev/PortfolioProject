@@ -33,15 +33,11 @@ const Homepage = () => {
           transition={{ duration: 1 }}
         >
           {/* TITLE */}
-          <h1 className="text-3xl text-black font-semibold md:text-5xl">Kicking Ideas Into Motion</h1>
+          <h1 className="text-3xl text-black font-semibold md:text-5xl">Bridging Requirements and Working Systems</h1>
 
           {/* DESCRIPTION */}
           <p className="md:text-xl">
-            Welcome to my developer portfolio — where every project is driven by precision, momentum, and purpose. Just like gears in motion, my code turns ideas into seamless, scalable applications.
-          </p>
-
-          <p className="md:text-xl">
-            I’m a Full-Stack Developer with a passion for building intuitive web and mobile experiences. From front-end interfaces to backend logic and cloud deployment, I specialize in technologies like React.js, Node.js, and Azure. With a strong foundation in CI/CD, API integration, and Agile workflows, I bring both creativity and technical rigor to every build.
+            Welcome — I&apos;m Riccardo Moncada, a Computer Programming &amp; Analysis graduate (Seneca College, 3.9 GPA) working across the full software development lifecycle. My focus is on the analyst-track work that shapes how systems get built: gathering requirements, designing data flows, mapping processes, and producing the documentation that makes development teams effective. When the role calls for it, I write the code myself. Currently exploring junior Business Analyst, Systems Analyst, Programmer Analyst, and full-stack development opportunities.
           </p>
 
           {/* BUTTONS */}
