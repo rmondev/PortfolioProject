@@ -275,7 +275,7 @@ const AboutPage = () => {
                   <p>• Maintained and updated intranet pages using jQuery, HTML5, CSS, and JavaScript.</p>
                 </div>
                 {/* JOB DATE */}
-                <div className="p-3 text-black text-sm font-semibold">2022 - 2023</div>
+                <div className="p-3 text-black text-sm font-semibold">Sep 2022 – Apr 2023</div>
                 {/* JOB COMPANY */}
                 <div className="p-1 rounded bg-white text-sm font-semibold w-fit">Toronto Transit Commission</div>
               </motion.div>
