@@ -5,39 +5,70 @@ import { useRef } from 'react';
 import Link from 'next/link';
 const AboutPage = () => {
 
-  const skillsList = [
-    "JavaScript", "TypeScript", "Shell Scripting", "C/C++ (STL)",
-    "VBA", "Java", "Kotlin", "Swift", "Python",
-    "HTML5", "CSS", "DOM",
-    "React.js", "Next.js", "Tailwind CSS",
-    "Jotai", "Redux",
-    "Node.js", "Express.js", "Firebase",
-    "PostgreSQL", "Oracle", "MS Access", "MongoDB", "Firebase Firestore",
-    "RESTful APIs", "Authentication (JWT, Firebase SSO)",
-    "Azure App Services", "Vercel",
-    "Android Studio", "Apple Xcode", "React Native",
-    "SQLite", "Core Data", "RoomDB",
-    "React Native Paper",
-    "MongoDB Atlas",
-    "GitHub Actions",
-    "Azure",
-    "Secure authentication (JWT, Firebase SSO)", "Version Control (Git, GitHub)",
-    "GitHub", "MS Project", "Teams", "Zoom", "WebEx",
-    "Scrum", "Sprint Planning"
+  const skillCategories = [
+    {
+      category: "Business Analysis & Systems",
+      skills: [
+        "Business Analysis", "Systems Analysis", "Requirements Gathering", "Process Mapping",
+        "Functional Specifications", "Non-Functional Requirements", "Data Modeling",
+        "Workflow Design", "Stakeholder Communication", "Technical Documentation"
+      ]
+    },
+    {
+      category: "Methods & Collaboration",
+      skills: [
+        "Agile (Scrum)", "SDLC", "Sprint Planning", "Cross-Functional Teamwork",
+        "GitHub Projects", "Git/GitHub", "MS Project"
+      ]
+    },
+    {
+      category: "Databases & Data",
+      skills: [
+        "SQL", "PostgreSQL", "MongoDB", "Firebase Firestore", "Microsoft Access",
+        "Data Validation", "Data Transformation", "CRUD Operations", "REST APIs"
+      ]
+    },
+    {
+      category: "Frontend & UI",
+      skills: [
+        "React", "Next.js", "TypeScript", "JavaScript", "Tailwind CSS",
+        "HTML5", "CSS", "Framer Motion", "React Native"
+      ]
+    },
+    {
+      category: "Backend & Infrastructure",
+      skills: [
+        "Node.js", "Express.js", "VBA", "JWT", "Firebase Authentication",
+        "Azure App Services", "Vercel", "GitHub Actions"
+      ]
+    },
+    {
+      category: "Tools & Platforms",
+      skills: [
+        "Figma", "VS Code", "Microsoft Office 365", "Teams", "Zoom"
+      ]
+    }
   ];
 
   const SkillListElement = () => {
     return (
-      <>
-        {skillsList.map((skill, index) => (
-          <div 
-            key={index} 
-            className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black border border-black transition-all"
-          >
-            {skill}
+      <div className="flex flex-col gap-8 w-full">
+        {skillCategories.map((group, groupIndex) => (
+          <div key={groupIndex} className="flex flex-col gap-3">
+            <h3 className="text-xs font-semibold uppercase tracking-widest text-gray-500">{group.category}</h3>
+            <div className="flex gap-3 flex-wrap">
+              {group.skills.map((skill, skillIndex) => (
+                <div
+                  key={skillIndex}
+                  className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black border border-black transition-all"
+                >
+                  {skill}
+                </div>
+              ))}
+            </div>
           </div>
         ))}
-        </>
+      </div>
     );
   };
 
@@ -150,7 +181,7 @@ const AboutPage = () => {
             animate={isSkillRefInView ? {x:0} : {}} 
             transition={{delay:0.4}} 
             ref={skillRef}
-            className="flex gap-4 flex-wrap">
+            className="w-full">
               <SkillListElement/>
               {/* <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">JavaScript</div>
               <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">TypeScript</div>
