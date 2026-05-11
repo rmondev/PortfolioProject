@@ -75,7 +75,7 @@ const PortfolioPage = () => {
       id: 3,
       title: "Chef Claude - Your AI-powered kitchen companion for smarter, tastier recipes",
       platform: ' | Mobile Web App | Desktop Web App | ',
-      desc: "An AI powered recipe creation companion. Share a list of ingredients with Chef Claude, and the app will make a create a recipe for you to enjoy. This project helped me explore AI integration,by exploring AI API models such as Claude and Hugging Face.",
+      desc: "An AI powered recipe creation companion. Share a list of ingredients with Chef Claude, and the app will make a create a recipe for you to enjoy. This project helped me explore AI integration,by exploring AI API integration with multiple LLM providers including Hugging Face.",
       img: [
         '/screenshots/chefClaudeApp/Screenshot1.png',
         '/screenshots/chefClaudeApp/Screenshot2.png',
