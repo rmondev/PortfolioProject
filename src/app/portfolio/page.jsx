@@ -274,13 +274,51 @@ const PortfolioPage = () => {
   const animationText = " <- Fullstack <- React <- Mobile <- Developer"
 
   
+  const PrevArrow = ({ onClick }) => (
+    <button
+      onClick={onClick}
+      className="absolute left-2 top-1/2 -translate-y-1/2 z-10 w-12 h-12 rounded-full bg-black text-white text-2xl flex items-center justify-center hover:bg-white hover:text-black border-2 border-black transition-all shadow-md"
+    >
+      ‹
+    </button>
+  );
+
+  const NextArrow = ({ onClick }) => (
+    <button
+      onClick={onClick}
+      className="absolute right-2 top-1/2 -translate-y-1/2 z-10 w-12 h-12 rounded-full bg-black text-white text-2xl flex items-center justify-center hover:bg-white hover:text-black border-2 border-black transition-all shadow-md"
+    >
+      ›
+    </button>
+  );
+
+  const ChildPrevArrow = ({ onClick }) => (
+    <button
+      onClick={onClick}
+      className="absolute -left-10 top-1/2 -translate-y-1/2 z-10 w-9 h-9 rounded-full bg-black text-white text-xl flex items-center justify-center hover:bg-white hover:text-black border-2 border-black transition-all shadow-md"
+    >
+      ‹
+    </button>
+  );
+
+  const ChildNextArrow = ({ onClick }) => (
+    <button
+      onClick={onClick}
+      className="absolute -right-10 top-1/2 -translate-y-1/2 z-10 w-9 h-9 rounded-full bg-black text-white text-xl flex items-center justify-center hover:bg-white hover:text-black border-2 border-black transition-all shadow-md"
+    >
+      ›
+    </button>
+  );
+
   const parentSettings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: true
+    arrows: true,
+    prevArrow: <PrevArrow />,
+    nextArrow: <NextArrow />
   };
 
   const childSettings = {
@@ -291,7 +329,9 @@ const PortfolioPage = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    swipe: false
+    swipe: false,
+    prevArrow: <ChildPrevArrow />,
+    nextArrow: <ChildNextArrow />
   };
 
   
