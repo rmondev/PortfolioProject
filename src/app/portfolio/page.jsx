@@ -19,37 +19,38 @@ const PortfolioPage = () => {
     {
       id: 13,
       title: "TraderJoeAI — Autonomous Equity Trading Research System",
-      platform: ' | Personal Project | Systems Design | ',
+      platform: ' | Personal Project | Automation System | Systems Design | AI Integration | ',
       desc: "TraderJoeAI is a paper-trading equity research system I designed and built to explore the intersection of business analysis, systems architecture, and quantitative decision-making. The system runs in simulation mode against live market data — no real trades are placed — with strategy performance benchmarked against the S&P 500. I designed the requirements and data flow architecture across three integrated data sources (Perplexity AI, Alpaca Markets, Alpha Vantage), built a risk governance framework with hard enforcement rules, mapped a scheduling model of 10 automated routines, and established audit trails via append-only trading journals and benchmark logs. Research summaries and trade notifications are delivered to users in real time via Discord.",
       img: [
         '/screenshots/traderJoeAI/Screenshot1.png',
       ],
       githubLink: "#",
       link: '#',
+      hideLinks: true,
       imgLayout: 'landscape',
       techStack: techIcons.filter(icon =>
-        ["TypeScript", "Node.js", "Github"].includes(icon.name)
+        ["TypeScript", "Node.js", "Github", "Discord", "Twilio", "Alpaca Markets", "Claude", "Perplexity"].includes(icon.name)
       )
     },
 
     {
       id: 14,
       title: "Foodie AI — Social Platform for Food Creators (Planning Phase)",
-      platform: ' | Personal Project | Business Analysis | ',
+      platform: ' | Personal Project | Mobile App | Business Analysis | Planning Phase | AI Integration | ',
       desc: "Foodie AI is the planning-phase successor to CucinAI — a React Native social platform combining AI-powered recipe generation with community features. The project is deliberately structured as a business analysis exercise rather than a code-first build. Deliverables published publicly include functional and non-functional requirements documentation, screen flow design, Firestore data models and security rules, target user personas, and a tracked GitHub Projects board with 4 planning milestones.",
       img: [],
       githubLink: "https://github.com/rmondev/SocialRecipeAppPlanning",
       link: 'https://github.com/rmondev/SocialRecipeAppPlanning',
       linkLabel: 'View Planning Docs',
       techStack: techIcons.filter(icon =>
-        ["Firebase", "OpenAI", "Figma", "Github"].includes(icon.name)
+        ["Firebase", "OpenAI", "Figma", "Github", "React Native", "Expo"].includes(icon.name)
       )
     },
 
     {
       id: 1,
       title: "CucinAI - Your AI-powered kitchen companion for smarter, tastier recipes",
-      platform: ' | Mobile Web App | Desktop Web App | ',
+      platform: ' | Personal Project | Web App | Full-Stack | AI Integration | ',
       desc: "A recipe organizer with AI-powered enhancements to keep meals exciting. This project helped me explore AI integration with OpenAI, authentication, and full-stack development while building a useful and interactive app. Easily organize your favorite recipes and use AI to generate similar or enhanced variations. Whether you're looking to switch things up while keeping familiar flavors or improve a dish with smart ingredient suggestions, this app helps you keep your meals exciting and fresh. Log in with Google and Try It Out!",
       img: [
         '/screenshots/cucinaiAIChef/Screenshot1.png', 
@@ -73,7 +74,7 @@ const PortfolioPage = () => {
     {
       id: 2,
       title: "Met Gallery Web App",
-      platform: ' | Mobile Web App | Desktop Web App | ',
+      platform: ' | Academic Project | Web App | Full-Stack | ',
       desc: "The Met Gallery App is an interactive web application that allows users to explore and engage with the Metropolitan Museum of Art's collection. This app supports functionality for searching, viewing detailed information, managing favorites, and tracking search history using the Museum's public API.",
       img: [
         '/screenshots/webMETGalleryApp/Screenshot1.png', 
@@ -104,7 +105,7 @@ const PortfolioPage = () => {
     {
       id: 3,
       title: "Chef Claude - Your AI-powered kitchen companion for smarter, tastier recipes",
-      platform: ' | Mobile Web App | Desktop Web App | ',
+      platform: ' | Personal Project | Web App | Frontend | AI Integration | ',
       desc: "An AI powered recipe creation companion. Share a list of ingredients with Chef Claude, and the app will make a create a recipe for you to enjoy. This project helped me explore AI integration,by exploring AI API integration with multiple LLM providers including Hugging Face.",
       img: [
         '/screenshots/chefClaudeApp/Screenshot1.png',
@@ -121,7 +122,7 @@ const PortfolioPage = () => {
     {
       id: 4,
       title: "Tenzies Game",
-      platform: '| Mobile Web App | Desktop Web App |',
+      platform: ' | Personal Project | Web App | Frontend | ',
       desc: `Tenzies is a fast-paced dice game where players race to get all ten of their dice to show the same number. The first player to shout "Tenzies!" after achieving this wins. It's a simple, fun game that can be played by 2 or more players of almost any age. `,
       img: [
         '/screenshots/tenziesGame/Screenshot1.png',
@@ -138,7 +139,7 @@ const PortfolioPage = () => {
     {
       id: 5,
       title: "Health Tracker Ring Product Showcase Website",
-      platform: ' | Mobile Web App | Desktop Web App | ',
+      platform: ' | Personal Project | Website | Frontend | ',
       desc: "This is a mock product showcase website for a Health Tracker Ring. In this project I learned how to create a static product showcase website, stylizing components with images, video and with carousels that translate product information into beautiful and effectively informative visuals.",
       img: [
         '/screenshots/vitalHealthWebsite/Screenshot1.png', 
@@ -163,7 +164,7 @@ const PortfolioPage = () => {
     {
       id: 6,
       title: "Chronicle: Your Ultimate Travel Companion ",
-      platform: ' | Mobile Web App | Desktop Web App | ',
+      platform: ' | Team Project | Web App | Full-Stack | ',
       desc: "Chronicle is a mobile web app for effortless travel documentation and sharing. Capture your journeys with text, photos, and videos, and relive your adventures anytime, anywhere.",
       img: ["/screenshots/webChronicleApp/main_screen.png", "/screenshots/webChronicleApp/home_screen.png", "/screenshots/webChronicleApp/forum.png"],
       githubLink: "https://github.com/Vaibhav-G-Parmar/PRJ566-Team_4",
@@ -200,7 +201,7 @@ const PortfolioPage = () => {
     {
       id: 8,
       title: "iOS College Registration App",
-      platform: ' | iOS | ',
+      platform: ' | Academic Project | iOS App | Swift | ',
       desc: "This is a college registration app I created using Swift to practice implementing UI Elements.",
       img: ["/screenshots/iOSCollegeRegApp/WelcomeScreen1.png","/screenshots/iOSCollegeRegApp/ExploreScreen2.png", "/screenshots/iOSCollegeRegApp/RegistrationScreen2.png"],
       githubLink: "https://github.com/rmondev/iOS-College-Registration-App",
@@ -348,14 +349,18 @@ const PortfolioPage = () => {
           return (
             <div
               key={item.id}
-              className="flex flex-col items-center content-center justify-center gap-6 py-8 px-4 rounded-2xl"
+              className="flex flex-col items-center content-center justify-center gap-6 py-8 px-16 rounded-2xl"
             >
               <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-black text-center">
                 {item.title}
               </h1>
-              <h2 className='text-lg sm:text-xl md:text-2xl lg:text-3xl font-light text-black text-center mt-6'>
-                {item.platform}
-              </h2>
+              <div className="flex flex-wrap justify-center gap-2 mt-4">
+                {item.platform.split('|').map(p => p.trim()).filter(Boolean).map((tag, i) => (
+                  <span key={i} className="text-xs sm:text-sm px-3 py-1 rounded-full border border-black text-black font-medium">
+                    {tag}
+                  </span>
+                ))}
+              </div>
 
             
 
@@ -435,7 +440,7 @@ const PortfolioPage = () => {
             
 
               {/* BUTTONS */}
-              <div className="flex w-full gap-4 items-center justify-center p-6">
+              {!item.hideLinks && <div className="flex w-full gap-4 items-center justify-center p-6">
               
               {item.githubProjectLinks?.frontend && item.githubProjectLinks?.backend ? (
                 <>
@@ -483,7 +488,7 @@ const PortfolioPage = () => {
 
              
 
-              </div>
+              </div>}
 
             </div>
           );

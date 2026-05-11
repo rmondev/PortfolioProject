@@ -39,6 +39,13 @@ export const techIcons = [
     { name: "Android Studio", type: "tool", url: "https://raw.githubusercontent.com/devicons/devicon/master/icons/androidstudio/androidstudio-original.svg" },
     { name: "XCode", type: "tool", url: "https://raw.githubusercontent.com/devicons/devicon/master/icons/xcode/xcode-original.svg" },
     { name: "VSCode", type: "tool", url: "https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" },
+    { name: "React Native", type: "framework", url: "https://cdn.worldvectorlogo.com/logos/react-native-1.svg" },
+    { name: "Expo", type: "tool", url: "https://raw.githubusercontent.com/devicons/devicon/master/icons/expo/expo-original-wordmark.svg" },
+    { name: "Discord", type: "tool", url: "https://www.vectorlogo.zone/logos/discord/discord-icon.svg" },
+    { name: "Twilio", type: "tool", url: "https://cdn.worldvectorlogo.com/logos/twilio.svg" },
+    { name: "Alpaca Markets", type: "tool", url: "https://cdn.worldvectorlogo.com/logos/alpaca.svg" },
+    { name: "Claude", type: "tool", url: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/anthropic.svg" },
+    { name: "Perplexity", type: "tool", url: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/perplexity.svg" },
 
    
 
