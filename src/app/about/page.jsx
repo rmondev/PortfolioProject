@@ -71,8 +71,18 @@ const AboutPage = () => {
             {/*BIO TITLE*/}
             <h1 className='font-bold text-2xl'>ABOUT ME</h1>
             {/*BIOGRAPHY TEXT*/}
-                  <p className=' text-sm sm:text-sm md:text-lg lg:text-lg xl:text-lg'>
-            Hello! I’m Riccardo Moncada, a Computer Programming &amp; Analysis graduate from Seneca College, specializing in software development and data analysis. During my co-op at the Toronto Transit Commission, I enhanced internal systems using GUI, VBA, and SQL, and developed skills in languages including C, C++, Java, and JavaScript. I&apos;ve created projects ranging from an iOS Movie Database app to &ldquo;Chronicle&rdquo;, a web application for Travel Journaling and connecting with a network of like minded travelers, demonstrating my expertise in web development (HTML5, CSS, React/Next.js, Node.js) and exposure to mobile application development (Swift, SwiftUI, CoreData). Committed to excellence, I employ rigorous testing and Agile methodologies. I’m excited to join IT teams to explore innovative solutions. Let’s connect to discuss the future of technology and creativity. </p>
+                  <p className="text-sm sm:text-sm md:text-lg lg:text-lg xl:text-lg">
+            Hello! I&apos;m Riccardo Moncada, a Computer Programming &amp; Analysis graduate from Seneca College (3.9 GPA, President&apos;s Honour List 3×). My background spans the full software development lifecycle, with a particular focus on the analyst-track work that bridges business needs and technical implementation.
+          </p>
+          <p className="text-sm sm:text-sm md:text-lg lg:text-lg xl:text-lg">
+            During my Programmer Analyst co-op at the Toronto Transit Commission, I participated in Scrum ceremonies and stakeholder meetings, translating operational pain points into system enhancements using SQL, VBA, and Microsoft Access. I independently designed a searchable dashboard that replaced manual SharePoint document searches across thousands of historical job postings, and produced the documentation that supported its adoption.
+          </p>
+          <p className="text-sm sm:text-sm md:text-lg lg:text-lg xl:text-lg">
+            Outside of formal employment I&apos;ve continued building. CucinAI is a live AI-powered web application I designed and deployed end-to-end. Foodie AI and TraderJoeAI are recent projects centered on business analysis deliverables — requirements documentation, data flow architecture, screen flows, and risk frameworks — with code as the implementation of those decisions, not the starting point.
+          </p>
+          <p className="text-sm sm:text-sm md:text-lg lg:text-lg xl:text-lg">
+            I can sit in a requirements-gathering session, evaluate technical feasibility, and when the role calls for it, write the code myself. Currently open to junior Business Analyst, Systems Analyst, Programmer Analyst, and full-stack development roles. Let&apos;s connect.
+          </p>
             <Link href="/contact">
               <button className="p-4 rounded-lg bg-black text-white">Contact Me</button>
             </Link>
