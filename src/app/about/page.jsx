@@ -18,9 +18,9 @@ const AboutPage = () => {
     "Android Studio", "Apple Xcode", "React Native",
     "SQLite", "Core Data", "RoomDB",
     "React Native Paper",
-    "Azure App Services (Deployment, Scaling, Monitoring)", "MongoDB Atlas",
-    "GitHub Actions", "Vercel",
-    "Firebase", "Azure",
+    "MongoDB Atlas",
+    "GitHub Actions",
+    "Azure",
     "Secure authentication (JWT, Firebase SSO)", "Version Control (Git, GitHub)",
     "GitHub", "MS Project", "Teams", "Zoom", "WebEx",
     "Scrum", "Sprint Planning"
