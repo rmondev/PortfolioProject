@@ -291,7 +291,7 @@ const AboutPage = () => {
                   ref={experienceRef} 
                   className="w-1/3">
                     {/* JOB TITLE */}
-                    <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">Executive Sous Chef</div>
+                    <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">Kitchen Manager</div>
                     {/* JOB DESCRIPTION */}
                     <div className="p-3 text-sm italic">
                       <p>• Managed kitchen operations, including ordering supplies, inventory control, and staff scheduling.</p>
@@ -302,7 +302,7 @@ const AboutPage = () => {
                     {/* JOB DATE */}
                     <div className="p-3 text-black text-sm font-semibold">2018 - 2020</div>
                     {/* JOB COMPANY */}
-                    <div className="p-1 rounded bg-white text-sm font-semibold w-fit">Great Canadian Gaming Corporation - GBHC</div>
+                    <div className="p-1 rounded bg-white text-sm font-semibold w-fit">Great Blue Heron Casino</div>
                   </motion.div>
                 {/* CENTER */}
                 <motion.div 
