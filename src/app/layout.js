@@ -5,7 +5,7 @@ import TransitionProvider from "@/components/transitionProvider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "rmondev [ Riccardo Moncada ]",
+  title: "Riccardo Moncada — Portfolio",
   description: "Riccardo Moncada — Business / Systems Analyst and Full-Stack Developer. Computer Programming & Analysis graduate, Seneca College.",
 };
 
