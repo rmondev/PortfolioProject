@@ -15,7 +15,22 @@ import { techIcons } from '../../../public/iconsImageData/techIcons';
 const PortfolioPage = () => {
 
   const items = [
-  
+
+    {
+      id: 13,
+      title: "TraderJoeAI — Autonomous Equity Trading Research System",
+      platform: ' | Personal Project | Systems Design | ',
+      desc: "TraderJoeAI is a paper-trading equity research system I designed and built to explore the intersection of business analysis, systems architecture, and quantitative decision-making. The system runs in simulation mode against live market data — no real trades are placed — with strategy performance benchmarked against the S&P 500. I designed the requirements and data flow architecture across three integrated data sources (Perplexity AI, Alpaca Markets, Alpha Vantage), built a risk governance framework with hard enforcement rules, mapped a scheduling model of 10 automated routines, and established audit trails via append-only trading journals and benchmark logs.",
+      img: [
+        '/screenshots/traderJoeAI/placeholder.png',
+      ],
+      githubLink: "#",
+      link: '#',
+      techStack: techIcons.filter(icon =>
+        ["TypeScript", "Node.js", "Github"].includes(icon.name)
+      )
+    },
+
     {
       id: 1,
       title: "CucinAI - Your AI-powered kitchen companion for smarter, tastier recipes",
