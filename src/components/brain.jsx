@@ -857,8 +857,7 @@ const Brain = ({ scrollYProgress }) => {
                     id="Fill-196"
                   />
                 </g>
-                <Link href="https://lama.dev">
-                  <g
+                <g
                     id="rs-cog8"
                     transform="translate(211.549 164.6)"
                     fill="#FFF"
@@ -873,7 +872,6 @@ const Brain = ({ scrollYProgress }) => {
                       // transition={{duration:2}}
                     />
                   </g>
-                </Link>
                 <g id="rs-connector1" transform="translate(183 128.274)">
                   <g
                     id="Group-3"
@@ -917,8 +915,7 @@ const Brain = ({ scrollYProgress }) => {
                       mask="url(#mask-12)"
                     />
                   </g>
-                  <Link href="https://lama.dev">
-                    <g
+                  <g
                       id="Fill-63"
                       transform="translate(114.23 121.907)"
                       fill="#FFF"
@@ -930,7 +927,6 @@ const Brain = ({ scrollYProgress }) => {
                         style={{ rotate: rotatesForward2 }}
                       />
                     </g>
-                  </Link>
                   <g
                     id="Group-4"
                     transform="translate(70.036 243.629)"
