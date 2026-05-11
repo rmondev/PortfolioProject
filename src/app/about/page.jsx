@@ -241,7 +241,7 @@ const AboutPage = () => {
             <div className="">
 
               {/* EXPERIENCE LIST ITEM */}
-              <div className="flex justify-between h-130 sm:h-130">
+              <div className="flex justify-between">
                 {/* LEFT */}
                   <motion.div
                   initial={{x:"-1000px"}} 
@@ -282,7 +282,7 @@ const AboutPage = () => {
               </div>
                
             {/* EXPERIENCE LIST ITEM */}
-            <div className="flex justify-between h-48">
+            <div className="flex justify-between">
             {/* LEFT */}
               <div className="w-1/3">
               </div>
@@ -323,7 +323,7 @@ const AboutPage = () => {
             </div>
 
             {/* EXPERIENCE LIST ITEM */}
-            <div className="flex justify-between h-48">
+            <div className="flex justify-between">
                 {/* LEFT */}
                   <motion.div 
                   initial={{x:"-1000px"}} 
@@ -371,7 +371,7 @@ const AboutPage = () => {
         
         {/*SVG CONTAINER*/}
         
-        <div className='hidden lg:block w-1/3 sticky top-0 z-30 xl:1/2'>
+        <div className='hidden lg:block w-1/3 sticky top-0 z-30 xl:1/2 h-screen'>
           <Brain scrollYProgress={scrollYProgress}/>
         </div>
         
