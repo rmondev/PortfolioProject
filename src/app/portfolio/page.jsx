@@ -20,12 +20,13 @@ const PortfolioPage = () => {
       id: 13,
       title: "TraderJoeAI — Autonomous Equity Trading Research System",
       platform: ' | Personal Project | Systems Design | ',
-      desc: "TraderJoeAI is a paper-trading equity research system I designed and built to explore the intersection of business analysis, systems architecture, and quantitative decision-making. The system runs in simulation mode against live market data — no real trades are placed — with strategy performance benchmarked against the S&P 500. I designed the requirements and data flow architecture across three integrated data sources (Perplexity AI, Alpaca Markets, Alpha Vantage), built a risk governance framework with hard enforcement rules, mapped a scheduling model of 10 automated routines, and established audit trails via append-only trading journals and benchmark logs.",
+      desc: "TraderJoeAI is a paper-trading equity research system I designed and built to explore the intersection of business analysis, systems architecture, and quantitative decision-making. The system runs in simulation mode against live market data — no real trades are placed — with strategy performance benchmarked against the S&P 500. I designed the requirements and data flow architecture across three integrated data sources (Perplexity AI, Alpaca Markets, Alpha Vantage), built a risk governance framework with hard enforcement rules, mapped a scheduling model of 10 automated routines, and established audit trails via append-only trading journals and benchmark logs. Research summaries and trade notifications are delivered to users in real time via Discord.",
       img: [
-        '/screenshots/traderJoeAI/placeholder.png',
+        '/screenshots/traderJoeAI/Screenshot1.png',
       ],
       githubLink: "#",
       link: '#',
+      imgLayout: 'landscape',
       techStack: techIcons.filter(icon =>
         ["TypeScript", "Node.js", "Github"].includes(icon.name)
       )
@@ -36,9 +37,7 @@ const PortfolioPage = () => {
       title: "Foodie AI — Social Platform for Food Creators (Planning Phase)",
       platform: ' | Personal Project | Business Analysis | ',
       desc: "Foodie AI is the planning-phase successor to CucinAI — a React Native social platform combining AI-powered recipe generation with community features. The project is deliberately structured as a business analysis exercise rather than a code-first build. Deliverables published publicly include functional and non-functional requirements documentation, screen flow design, Firestore data models and security rules, target user personas, and a tracked GitHub Projects board with 4 planning milestones.",
-      img: [
-        '/screenshots/foodieAI/placeholder.png',
-      ],
+      img: [],
       githubLink: "https://github.com/rmondev/SocialRecipeAppPlanning",
       link: 'https://github.com/rmondev/SocialRecipeAppPlanning',
       linkLabel: 'View Planning Docs',
@@ -299,7 +298,7 @@ const PortfolioPage = () => {
         className="w-10/12 max-w-[95vw] mx-auto px-2 bg-stone-300"
       >
         {items.map((item) => {
-          if (!item.title || !item.img.length || !item.githubLink) return null;
+          if (!item.title || !item.githubLink) return null;
   
           return (
             <div
@@ -316,7 +315,11 @@ const PortfolioPage = () => {
             
 
               <div className="w-full flex justify-center items-center p-6">
-                {item.img.length > 1 ? (
+                {item.img.length === 0 ? (
+                  <div className="w-full max-w-3xl aspect-video rounded-xl border border-black flex items-center justify-center bg-stone-200">
+                    <p className="text-black text-sm sm:text-base italic">Screenshots coming soon</p>
+                  </div>
+                ) : item.img.length > 1 ? (
                   <Slider
                     {...childSettings}
                     className="w-[220px] sm:w-[300px] md:w-[340px] lg:w-[360px] xl:w-[380px] border  border-black rounded-2xl bg-black px-1 pt-2 pb-10" // Smartphone look
@@ -334,6 +337,15 @@ const PortfolioPage = () => {
                       </div>
                     ))}
                   </Slider>
+                ) : item.imgLayout === 'landscape' ? (
+                  <div className="relative w-full max-w-3xl aspect-video rounded-xl overflow-hidden bg-black">
+                    <Image
+                      src={item.img[0]}
+                      alt={`${item.title} screenshot`}
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
                 ) : (
                   <div className="relative w-[280px] sm:w-[320px] md:w-[360px] lg:w-[400px] h-[500px] md:h-[600px] border border-black rounded-[2rem] overflow-hidden bg-white px-1 pt-2 pb-10">
                     <Image
