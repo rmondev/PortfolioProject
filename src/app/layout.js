@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "rmondev [ Riccardo Moncada ]",
-  description: "Full-stack Web and Mobile App Developer]",
+  description: "Riccardo Moncada — Business / Systems Analyst and Full-Stack Developer. Computer Programming & Analysis graduate, Seneca College.",
 };
 
 export default function RootLayout({ children }) {
