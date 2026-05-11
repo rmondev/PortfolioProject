@@ -32,6 +32,22 @@ const PortfolioPage = () => {
     },
 
     {
+      id: 14,
+      title: "Foodie AI — Social Platform for Food Creators (Planning Phase)",
+      platform: ' | Personal Project | Business Analysis | ',
+      desc: "Foodie AI is the planning-phase successor to CucinAI — a React Native social platform combining AI-powered recipe generation with community features. The project is deliberately structured as a business analysis exercise rather than a code-first build. Deliverables published publicly include functional and non-functional requirements documentation, screen flow design, Firestore data models and security rules, target user personas, and a tracked GitHub Projects board with 4 planning milestones.",
+      img: [
+        '/screenshots/foodieAI/placeholder.png',
+      ],
+      githubLink: "https://github.com/rmondev/SocialRecipeAppPlanning",
+      link: 'https://github.com/rmondev/SocialRecipeAppPlanning',
+      linkLabel: 'View Planning Docs',
+      techStack: techIcons.filter(icon =>
+        ["Firebase", "OpenAI", "Figma", "Github"].includes(icon.name)
+      )
+    },
+
+    {
       id: 1,
       title: "CucinAI - Your AI-powered kitchen companion for smarter, tastier recipes",
       platform: ' | Mobile Web App | Desktop Web App | ',
@@ -382,11 +398,11 @@ const PortfolioPage = () => {
                       </button>
                     
                 
-                  <button 
+                  <button
                     className="p-4 rounded-lg ring-1 ring-black bg-black text-white hover:bg-white hover:text-black hover:border-black border-white border-2"
                     onClick={() => openAppInWindow(item.link)}
                   >
-                    Try it Out!
+                    {item.linkLabel || 'Try it Out!'}
                   </button>
                 </>
               ) : (
@@ -399,11 +415,11 @@ const PortfolioPage = () => {
                       </button>
                    
                 
-                  <button 
+                  <button
                     className="p-4 rounded-lg ring-1 ring-black bg-black text-white hover:bg-white hover:text-black hover:border-black border-white border-2"
                     onClick={() => openAppInWindow(item.link)}
                   >
-                    Try it Out!
+                    {item.linkLabel || 'Try it Out!'}
                   </button>
                 </>
               )}
